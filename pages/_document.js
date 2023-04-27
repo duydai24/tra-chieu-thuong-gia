@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-document-import-in-page */
 /* eslint-disable react/no-unknown-property */
 import Document, {Head, Html, Main, NextScript} from 'next/document';
 import React from 'react';
