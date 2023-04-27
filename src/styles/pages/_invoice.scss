@@ -1,0 +1,58 @@
+.invoice-man {
+  @apply overflow-x-hidden overflow-y-auto flex-1 py-3;
+  /*height: calc(100vh - 150px);*/
+}
+.invs {
+  grid-template-columns: 30px 150px 1fr 110px 130px 150px;
+  .-data {
+    p {
+      @apply flex justify-between;
+    }
+  }
+}
+.inv-time {
+  @apply grid gap-3 my-2 py-1 items-center border-b border-solid border-gray-600;
+  grid-template-columns: 20px 150px 1fr;
+  svg {
+    @apply text-blue-500;
+  }
+}
+.inv-status {
+  display: grid;
+  align-items: center;
+  padding: 10px 0;
+  grid-template-columns: 1fr 140px;
+}
+
+.-status {
+  //font-size: 15px;
+  //font-weight: bold;
+  @apply flex gap-2;
+
+  &.s_0 {
+    @apply text-red-600;
+  }
+
+  &.s_2,
+  &.s_5,
+  &.s_7,
+  &.s_11 {
+    @apply text-green-600;
+  }
+
+  &.s_1,
+  &.s_3,
+  &.s_12 {
+    @apply text-yellow-600;
+  }
+
+  &.s_13 {
+    @apply text-red-900;
+  }
+}
+.inv-send {
+  grid-template-columns: 160px 1fr 120px 120px 160px;
+}
+.inv-client-sum {
+  grid-template-columns: 60px 1fr 120px 140px 120px 120px 80px 80px;
+}

@@ -1,0 +1,136 @@
+:root {
+  --bg-color: #004c3d;
+  --color-bgGreen: #00392d;
+  --color-bgBlack: #000000;
+  --color-textGreen: #ffffff;
+  --color-textBlack: #ffffff;
+  --color-root: #eceeef;
+  --color-container: #fff;
+  --color-main: #17315d;
+  --color-text: #2f2f2f;
+  --color-menu-main: #d2d2d2;
+  --color-white: #fff;
+  --color-border: #eceeef;
+  --color-border-width: 0.5px;
+  --color-facebook: #3c5a99;
+  --color-google: #f52937;
+  --color-success: #4ece3d;
+  --color-danger: #f02626;
+  --color-warn: yellow;
+  --color-quote: #2c3f5e;
+  --color-button: #d1d1d1; //checkbox
+  --color-module-label: #4e74b5;
+  --color-label: #9a9898;
+  --color-bg: #fff;
+  --color-bg-input: #2c3f5e;
+  --bg-header-table: #eee;
+  --bg-row-table: #fff;
+  --bg-row-odd: #e2e2e2;
+  --bg-blue: #eff6ff;
+  --header: #004c3d;
+  --footer: #004c3d;
+  --countdown: #3772f6;
+  --color-modal-header: #f6f7f8;
+  --color-col-border: transparent;
+  --color-main-menu: #fff;
+  --fontsize: 12px;
+  --iconsize: 18px;
+  --lineheight: 16px;
+  --fontsize-m: 1.4rem;
+  --fontsize-l: 2rem;
+  --color-table-header: #959595;
+  --color-table-odd: #f0f0f0;
+
+  --input-heigth: 22px;
+
+  --color-checked: #4ece3d;
+  --module-header-height: 100px;
+
+  --icon: #b1b1b1;
+  --newTitle: #bec2ce;
+  --brand: #0063b0;
+  --brand2: #22486e;
+  --bgFood: #f9f9fb;
+  --defaultBackWhite: #f4f4f4;
+  --back1: #b1b1b1;
+  --backDisable: #606060;
+  --bgS: #5965ff;
+  --btE: #0bede5;
+  --red: #ff5757;
+  --purple: #e61394;
+  --success: #0fb95e;
+  --success2: #0fb95f;
+  --yellow: #fbca08;
+  --white: #fff;
+  --white2: rgba(255;255;255;.2);
+  --white6: rgba(255;255;255;.6);
+  --white8: rgba(255;255;255;.8);
+  --buttonBorder: #fff;
+  --buttonBackground: #008dff;
+  --mainColor: #008dff;
+  --inputBorder: #cecece;
+  --avatarProfile: #fff;
+  --black: #000;
+  --blackRBG: rgb(0;0;0);
+  --black0: rgba(0;0;0;0);
+  --black1: rgba(0;0;0;.1);
+  --black2: rgba(0;0;0;.2);
+  --black4: rgba(0;0;0;.4);
+  --black6: rgba(0;0;0;.6);
+  --black8: rgba(0;0;0;.8);
+  --shadowColor: #adb3bf;
+  --colorLabel: #a1a1a1;
+  --labelText: #606060;
+  --mainText: #8b8989;
+  --secondText: #e31b4d;
+  --placeholder: #bfbfbf;
+  --seperator: #e2e2e2;
+  --errorBackground: rgba(255; 0; 0; 0.8);
+  --inputBackground: #f1f1f1;
+  --backColor2: #0c75bb;
+  --mainInputBack: #fff;
+  --borderColor: #e2e2e2;
+  --transparent: transparent;
+  --transparent2: rgba(0;0;0;0);
+  --promoteText: #484848;
+  --serviceContainer: rgba(14;118;188;.4);
+  --facebook: #3c5a99;
+  --google: #ff5757;
+  --color2: #3a4377;
+  --borderPayment: #d3d3d3;
+  --blueLight: #26c4ae;
+  --descriptionText: #707070;
+}
+.label {
+  @apply mb-2 font-bold relative text-sm;
+  color: var(--brand2);
+}
+
+@font-face {
+  font-family: "SF";
+  src: url("/fonts/SF-Compact-Italic.ttf");
+  font-display: swap;
+  font-style: medium;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF-Compact";
+  src: url("/fonts/SF-Compact.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "SF-Pro_Itatic";
+  src: url("/fonts/SF-Pro-Italic.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SF-Pro";
+  src: url("/fonts/SF-Pro.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}

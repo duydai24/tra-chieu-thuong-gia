@@ -1,0 +1,47 @@
+.logo {
+  height: 40px;
+}
+
+/*Menu User*/
+.menu-user {
+  @apply bg-gray-900 rounded shadow-md absolute mt-12 top-0 right-0 min-w-full overflow-auto z-30;
+}
+
+/*Menu Second*/
+.sec-menu {
+  @apply w-full hidden xl:flex flex-grow  lg:items-center lg:w-auto  mt-2 lg:mt-0 bg-gray-900 z-20;
+}
+.sec-menu.-show {
+  @apply flex flex-col mb-2;
+}
+
+.menu-item {
+  @apply flex items-center gap-1 py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-100 border-b-2 border-gray-900  hover:border-green-400;
+  span {
+    @apply text-sm;
+  }
+  svg {
+    @apply text-lg;
+  }
+}
+
+.menu-item.-active {
+  @apply text-blue-400 border-blue-400 hover:border-blue-400;
+}
+
+/*Login*/
+
+.login-input {
+  @apply rounded-3xl p-3 pl-6;
+  z-index: 1;
+}
+.login-button {
+  z-index: 2;
+}
+
+.login-protect {
+  @apply text-left h-3 text-gray-900 m-1 p-4 mb-10;
+}
+.login-social {
+  @apply mt-10;
+}

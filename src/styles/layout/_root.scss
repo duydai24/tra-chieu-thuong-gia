@@ -1,0 +1,19 @@
+.bg-black-alt {
+  background: #191919;
+}
+.text-black-alt {
+  color: #191919;
+}
+.border-black-alt {
+  border-color: #191919;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  @apply overflow-hidden flex flex-col;
+}
+
+.layout-title {
+  @apply uppercase font-bold text-gray-400 text-lg pb-1;
+}

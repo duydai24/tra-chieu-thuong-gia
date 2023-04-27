@@ -1,0 +1,20 @@
+.btn {
+  @apply rounded outline-none px-4 py-2 border border-gray-400 border-solid border-opacity-25 text-blue-600 font-semibold flex items-center justify-center;
+}
+.btn-circle {
+  @apply rounded-full;
+}
+.btn-img {
+  @apply rounded-full justify-between;
+}
+.btn-none {
+  @apply border-none;
+}
+.btn-loading {
+  @apply font-normal relative;
+  //width: 40px;
+  height: 40px;
+  svg {
+    font-size: 24px;
+  }
+}

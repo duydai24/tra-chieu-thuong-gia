@@ -1,0 +1,13 @@
+.date-editor {
+  @apply block;
+  > label {
+    @apply font-bold text-sm relative text-white;
+  }
+  > div {
+    @apply border-b border-solid border-white border-opacity-20;
+    padding-bottom: 2px;
+  }
+  input {
+    @apply pl-2  text-white;
+  }
+}

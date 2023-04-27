@@ -1,0 +1,53 @@
+@tailwind base;
+@import "./config";
+
+@tailwind components;
+@import "./components/index";
+@import "./layout/index";
+@import "./pages/index";
+@import "utils";
+@import "custom";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "~react-toastify/dist/ReactToastify.min.css";
+
+@tailwind utilities;
+.segment-title {
+  font-size: 26px;
+  line-height: 32px;
+}
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+.gap-30 {
+  grid-gap: 30px;
+}
+.modal-80 {
+  width: 80vw;
+}
+
+html {
+  scroll-behavior: smooth !important;
+  font-family: sans-serif;
+}
+.change-background {
+  background-color: var(--bg-color);
+}
+.change-background-footer {
+  background-color: var(--footer);
+}

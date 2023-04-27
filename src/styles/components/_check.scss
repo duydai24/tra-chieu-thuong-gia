@@ -1,0 +1,36 @@
+.checkbox {
+  @apply inline-flex cursor-pointer relative items-center select-none gap-1;
+  > input {
+    @apply cursor-pointer  w-5 h-5 appearance-none border-solid border border-green-600 rounded outline-none;
+    &:checked,
+    &:active {
+     
+    }
+  }
+  small {
+    @apply block mr-1;
+  }
+  .-l {
+    @apply block;
+  }
+}
+
+.flag-editor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+}
+
+.role-editor {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  .btn {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .flag-editor {
+    flex: 1;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}

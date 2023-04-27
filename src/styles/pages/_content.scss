@@ -1,0 +1,13 @@
+.posts {
+  grid-template-columns: 50px 80px 2fr 120px 1fr;
+}
+.post-edit {
+  grid-template-columns: 1fr 300px;
+}
+.fags {
+  grid-template-columns: 60px 50px 1fr 100px;
+}
+.tags {
+  grid-template-columns: 60px 1fr 80px 80px;
+  align-items: center;
+}

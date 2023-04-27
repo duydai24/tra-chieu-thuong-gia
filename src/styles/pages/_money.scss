@@ -1,0 +1,18 @@
+.money-list {
+  grid-template-columns: 60px 1fr 140px 60px 60px 60px 110px 100px;
+}
+.money-line-1 {
+  grid-template-columns: 60px 1fr 140px 80px 1fr;
+}
+.money-line-1 {
+  grid-template-columns: 60px 1fr 140px 120px 80px 1fr;
+  > p {
+    @apply line-clamp-1;
+  }
+}
+.money-line-2 {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  > p {
+    @apply flex gap-2;
+  }
+}

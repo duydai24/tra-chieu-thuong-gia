@@ -1,0 +1,33 @@
+.spl-wrapper {
+  @apply flex flex-col md:grid overflow-hidden gap-16;
+}
+.sple-left {
+  @apply p-1;
+}
+.spl-head {
+  @apply text-lg text-white flex items-center justify-between border-b border-solid border-white border-opacity-20;
+}
+.spl-button {
+  @apply flex items-center justify-center border-none text-green-600 bg-transparent w-8 h-8 rounded-full hover:bg-green-800 hover:text-white;
+  svg {
+    @apply fill-current;
+  }
+}
+.spl-tab {
+  @apply flex flex-wrap overflow-x-auto md:block;
+}
+
+.spl-main {
+  @apply overflow-hidden;
+}
+.tab-active {
+  @apply text-white;
+}
+.spl-bar {
+  @apply relative md:absolute;
+}
+@media only screen and (min-width: 768px) {
+  .spl-wrapper {
+    grid-template-columns: 250px 1fr;
+  }
+}

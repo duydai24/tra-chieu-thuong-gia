@@ -1,0 +1,64 @@
+.fm {
+  @apply flex flex-1 flex-col;
+  .-top {
+    @apply flex items-center justify-between  pb-1;
+    .btn {
+      @apply text-blue-400;
+    }
+  }
+}
+.fm-con {
+  @apply flex-1 grid rounded border border-solid border-gray-400 border-opacity-20;
+  grid-template-columns: 200px 1fr;
+}
+.fm-explorer {
+  @apply border-r border-solid border-gray-400 border-opacity-20 h-full px-1 flex flex-col;
+  button {
+    @apply flex items-center relative h-8 px-2;
+    &:first-child {
+      @apply border-b border-solid border-gray-400 border-opacity-20 mb-2;
+    }
+    svg {
+      @apply text-3xl text-yellow-500;
+    }
+    > span {
+      max-width: 160px;
+      @apply text-xs overflow-hidden;
+    }
+    .-size {
+      @apply absolute font-mono top-0 left-1 opacity-80 w-5 h-5 rounded-full text-white bg-blue-600 bg-opacity-70 flex items-center justify-center border;
+      font-size: 10px;
+    }
+  }
+}
+.fm-viewer {
+  @apply relative flex-1 flex flex-col justify-between bg-gray-100 bg-opacity-20;
+  .-img {
+    @apply flex-1 flex flex-col items-center justify-center;
+  }
+  .-act {
+    @apply pb-2 grid gap-1 px-2;
+    grid-template-columns: 1fr 400px;
+  }
+  .-file {
+    @apply block rounded-none px-1 bg-opacity-30;
+  }
+}
+.fm-content {
+  @apply grid items-start gap-2 p-2;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-rows: repeat(auto-fit, 32px);
+}
+.fm-item {
+  @apply flex items-center;
+  max-width: 200px;
+  span {
+    max-width: 160px;
+  }
+  .iconFolder {
+    @apply text-3xl text-yellow-500;
+  }
+  .iconFile {
+    @apply text-green-600;
+  }
+}
