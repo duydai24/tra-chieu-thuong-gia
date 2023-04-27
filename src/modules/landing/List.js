@@ -19,7 +19,7 @@ import ReasonHome from './reasonHome';
 import Speakers from './speakers';
 import Utilities from './utilities';
 
-function Landing({project = [], guest = [], speakers = [], other = {}, banner = [], news = [], services = []}) {
+function Landing({project = [], guest = [], speakers = [], other = {}, news = [], services = []}) {
   const {headerTitle, thumnail} = other;
   return <LayoutClient >
     <Helmet title={headerTitle}></Helmet>
@@ -29,7 +29,7 @@ function Landing({project = [], guest = [], speakers = [], other = {}, banner = 
           type: 'article',
           url: get_SEO_URL(ROUTES.LANDING),
           title: headerTitle,
-          description: 'Khu đô thị hạt nhân tiên phong kiến tạo trung tâm mới đô thị Đô Lương',
+          description: 'Đẳng cấp vượt trên mọi giới hạn',
           article: {
             publishedTime: Date.now(),
             modifiedTime: Date.now(),
