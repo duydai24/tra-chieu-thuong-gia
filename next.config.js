@@ -1,17 +1,8 @@
-
-const withPlugins = require('next-compose-plugins');
-
 const nextConfig = {
-  //basePath: '/apps',
-
   useFileSystemPublicRoutes: true,
-
   compress: false,
   poweredByHeader: false,
-
   eslint: {
-    // Warning: Dangerously allow production builds to successfully complete even if
-    // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
   webpack: (config) => {
@@ -20,11 +11,9 @@ const nextConfig = {
       use: ['@svgr/webpack'],
     });
     return config;
-  }
-  //reactStrictMode: true,
-
+  },
+  reactStrictMode: true,
 };
 
-module.exports = withPlugins([
+module.exports = nextConfig;
 
-], nextConfig);

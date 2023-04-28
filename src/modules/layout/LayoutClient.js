@@ -7,7 +7,6 @@ import Copyright from './Copyright';
 import Footer from './Footer';
 import Header from './Header';
 import HeaderMoBile from './HeaderMoblile';
-import Partner from './Partner';
 
 function LayoutClient({children}) {
   const [data, setConfigData] = useState({});

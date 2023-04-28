@@ -2,15 +2,11 @@
 import '../src/styles/globals.scss';
 
 import Layout from 'modules/layout';
-import {useStore} from 'modules/store';
 import Head from 'next/head';
-import PropTypes from 'prop-types';
 import {useEffect} from 'react';
 import {Helmet} from 'react-helmet';
-import {Provider} from 'react-redux';
 
 export default function MyApp({Component, pageProps}) {
-  const store = useStore(pageProps.initialReduxState);
 
   useEffect(() => {
     // Remove the server-side injected CSS.
@@ -24,7 +20,6 @@ export default function MyApp({Component, pageProps}) {
     <>
       <Head>
         <title>TRÀ CHIỀU THƯƠNG GIA</title>
-
       </Head>
       <Helmet
         htmlAttributes={{lang: 'vi'}}
@@ -37,16 +32,9 @@ export default function MyApp({Component, pageProps}) {
           {property: 'og:title', content: 'TRÀ CHIỀU THƯƠNG GIA'},
         ]}
       />
-      <Provider store={store}>
-        <Layout topLabel={pageProps.topLabel}>
-          <Component {...pageProps} />
-        </Layout>
-      </Provider>
+      <Layout topLabel={pageProps.topLabel}>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
-
-MyApp.propTypes = {
-  Component: PropTypes.elementType.isRequired,
-  pageProps: PropTypes.object.isRequired,
-};
