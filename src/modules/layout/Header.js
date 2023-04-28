@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 
-import Logo from 'lib/Logo';
+import {useRouter} from 'next/router';
 import React, {useEffect, useState} from 'react';
 
 import Menu from './Menu';
@@ -41,5 +42,14 @@ function Header({logoLink}) {
     </div>
   );
 }
-
+function Logo({className}) {
+  const router = useRouter();
+  const gotoHome = () => router.push('/');
+  return (
+    <img
+      className={'cursor-pointer ' + className}
+      src='/logo.png' alt="TCTG" width={60} height={60}
+      onClick={gotoHome} />
+  );
+}
 export default Header;

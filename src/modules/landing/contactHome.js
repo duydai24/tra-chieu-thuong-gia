@@ -5,7 +5,6 @@ import emailjs from '@emailjs/browser';
 import React, {useRef, useState} from 'react';
 
 import {validEmail, validName, validPhone} from '../../lib/regex';
-import ToastRoot from '../../lib/ToastRoot';
 
 function ContactHome() {
   const [name, setName] = useState('');
@@ -51,16 +50,16 @@ function ContactHome() {
         .then(
           (result) => {
             console.log(result);
-            ToastRoot.show(
-              'Cảm ơn đã đến với chúng tôi, chúng tôi sẽ liên lạc với bạn sớm nhất!'
-            );
+            //ToastRoot.show(
+            //  'Cảm ơn đã đến với chúng tôi, chúng tôi sẽ liên lạc với bạn sớm nhất!'
+            //);
             setEmail('');
             setName('');
             setMessage('');
             //window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior
           },
           (error) => {
-            ToastRoot.show(error.text);
+            console.log(); (error.text);
           }
         );
     }

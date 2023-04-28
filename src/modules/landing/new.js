@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import {getImageNewIfExists, getRealImageUrl} from 'core/getRealImageUrl';
 import NavLink from 'lib/NavLink';
 import React from 'react';
 import Slider from 'react-slick';
@@ -72,7 +71,7 @@ function New() {
             <div className='block' key={index}>
               <div className='flex items-center flex-col outline-none '>
                 <div className='relative overflow-hidden'>
-                  <img className='w-full h-[640px] relative hover:scale-125 transition-all duration-500' src={getRealImageUrl(getImageNewIfExists(item))} alt='' height={640} width={640} />
+                  <img className='w-full h-[640px] relative hover:scale-125 transition-all duration-500' src={item.image} alt='' height={640} width={640} />
                 </div>
                 <p className='text-white text-xl text-center py-5 h-[100px] max-w-[80%] hover:text-[#FFC292]'>{item.label}</p>
                 <NavLink to={item.link} newtab>
@@ -89,7 +88,7 @@ function New() {
             <div className='block' key={index}>
               <div className='flex items-center flex-col outline-none '>
                 <div className='relative'>
-                  <img className='w-screen h-[390px] relative' src={getRealImageUrl(item.mobile ? item.mobile : item.image)} alt='' height={390} width={390} />
+                  <img className='w-screen h-[390px] relative' src={item.image} alt='' height={390} width={390} />
                 </div>
                 <p className='text-white text-xl text-center py-5 max-w-[80%]'>{item.label}</p>
                 <NavLink to={item.link} newtab>

@@ -1,11 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import Logo from 'lib/Logo';
 import NavLink from 'lib/NavLink';
 import ContactHome from 'modules/landing/contactHome';
+import {useRouter} from 'next/router';
 import React from 'react';
 
-function Footer({data}) {
-    const {mobile} = data;
+function Footer() {
     return (
         <div id='contact' className='text-white relative'>
             <div className='block lg:hidden'>
@@ -16,7 +15,7 @@ function Footer({data}) {
                     <div className='flex flex-col lg:flex-col justify-between px-5 w-full lg:w-1/2 items-center lg:items-start bg-[#00392D] lg:bg-transparent lg:p-14'>
                         <div className='flex flex-col md:flex-row lg:flex-col lg:items-start items-center lg:my-0 w-full'>
                             <div className='w-ful'>
-                                <Logo src={mobile} className='lg:w-1/2 w-full pt-10 pb-5 lg:pt-0 lg:pb-10' />
+                                <Logo className='lg:w-1/2 w-full pt-10 pb-5 lg:pt-0 lg:pb-10' />
                             </div>
                             <div className=''>
                                 <div className='text-[14px] flex items-start flex-col'>
@@ -80,4 +79,14 @@ function Footer({data}) {
     );
 }
 
+function Logo({className}) {
+    const router = useRouter();
+    const gotoHome = () => router.push('/');
+    return (
+        <img
+            className={'cursor-pointer ' + className}
+            src='/logo.png' alt="TCTG" width={60} height={60}
+            onClick={gotoHome} />
+    );
+}
 export default Footer;
