@@ -1,18 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
-import axios from 'axios';
-import {webHost} from 'config/apiAddress';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Slider from 'react-slick/lib/slider';
 
+const data = [
+  {
+    image: 'par1-removebg-preview.png'
+  },
+  {
+    image: 'par2-removebg-preview.png'
+  },
+  {
+    image: 'par3-removebg-preview.png'
+  },
+  {
+    image: 'par4-removebg-preview.png'
+  },
+  {
+    image: 'par5-removebg-preview.png'
+  },
+  {
+    image: 'par6-removebg-preview.png'
+  },
+];
+
 function Partner() {
-  const [data, setData] = useState();
-  const fetchData = async () => {
-    const {data} = await axios.get(`${webHost}/api/hello`);
-    setData(data.parther);
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   const settings = {
     dots: false,

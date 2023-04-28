@@ -1,17 +1,118 @@
 /* eslint-disable @next/next/no-img-element */
-import axios from 'axios';
-import {webHost} from 'config/apiAddress';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
+
+const data = [
+  {
+    id: 1,
+    name: 'MS. LÊ THỊ KIM LOAN',
+    image: 'Artboard 1.png',
+    link: ''
+  },
+  {
+    id: 2,
+    name: 'MS. CAO THỊ HỒNG VÂN',
+    image: 'Artboard 2.png',
+    link: ''
+  },
+  {
+    id: 3,
+    name: 'MS. SUKHA PANNA',
+    image: 'Artboard 3.png',
+    link: ''
+  },
+  {
+    id: 4,
+    name: 'CEO - ĐỖ NGỌC BÍCH',
+    image: 'Artboard 18.png',
+    link: 'https://www.dongocbich.com/'
+  },
+  {
+    id: 5,
+    name: 'MR. JIKEY',
+    image: 'Artboard 4.png',
+    link: ''
+  },
+  {
+    id: 6,
+    name: 'MR. LÊ HOÀNG MINH',
+    image: 'Artboard 5.png',
+    link: ''
+  },
+  {
+    id: 7,
+    name: 'CEO - LÊ HỒNG ÂN',
+    image: 'Artboard 6.png',
+    link: 'https://www.thoibaoasiabusiness.com/truyenthongbaochi'
+  },
+  {
+    id: 8,
+    name: 'MR. NGUYỄN MINH ANH',
+    image: 'Artboard 7.png',
+    link: ''
+  },
+  {
+    id: 9,
+    name: 'MR. NAM ANH',
+    image: 'Artboard 8.png',
+    link: ''
+  },
+  {
+    id: 1,
+    name: 'MS. LÊ THỊ KIM LOAN1',
+    image: 'Artboard 9.png',
+    link: ''
+  },
+  {
+    id: 2,
+    name: 'MS. CAO THỊ HỒNG VÂN',
+    image: 'Artboard 10.png',
+    link: ''
+  },
+  {
+    id: 3,
+    name: 'MS. SUKHA PANNA',
+    image: 'Artboard 11.png',
+    link: ''
+  },
+  {
+    id: 4,
+    name: 'CEO - ĐỖ NGỌC BÍCH',
+    image: 'Artboard 12.png',
+    link: 'https://www.dongocbich.com/'
+  },
+  {
+    id: 5,
+    name: 'MR. JIKEY',
+    image: 'Artboard 13.png',
+    link: ''
+  },
+  {
+    id: 6,
+    name: 'MR. LÊ HOÀNG MINH',
+    image: 'Artboard 14.png',
+    link: ''
+  },
+  {
+    id: 7,
+    name: 'CEO - LÊ HỒNG ÂN',
+    image: 'Artboard 15.png',
+    link: 'https://www.thoibaoasiabusiness.com/truyenthongbaochi'
+  },
+  {
+    id: 8,
+    name: 'MR. NGUYỄN MINH ANH',
+    image: 'Artboard 16.png',
+    link: ''
+  },
+  {
+    id: 9,
+    name: 'MR. NAM ANH',
+    image: 'Artboard 17.png',
+    link: ''
+  }
+];
 
 function Guest() {
-  const [data, setData] = useState();
-  const fetchData = async () => {
-    const {data} = await axios.get(`${webHost}/api/hello`);
-    setData(data?.guest);
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   const splitElements = () => {
     const result = [];

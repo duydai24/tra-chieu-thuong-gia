@@ -1,24 +1,31 @@
 /* eslint-disable @next/next/no-img-element */
-import axios from 'axios';
-import {webHost} from 'config/apiAddress';
 import NavLink from 'lib/NavLink';
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {HiChatAlt2} from 'react-icons/hi';
 import {MdPhone} from 'react-icons/md';
 import Slider from 'react-slick/lib/slider';
 
 import ContactHome from './contactHome';
 
-function Banner({data}) {
-    const [posts, setPosts] = useState([]);
+const data = [
+    {
+        id: 1,
+        image: './banner1.jpg',
+        content: 'Đẳng Cấp Vượt Trên Mọi Giới Hạn',
+    },
+    {
+        id: 2,
+        image: './banner2.jpg',
+        content: 'Quyền lực mềm của người phụ nữ',
+    },
+    {
+        id: 3,
+        image: './banner3.jpg',
+        content: 'Smart',
+    },
+];
 
-    const fetchPosts = async () => {
-        const {data} = await axios.get(`${webHost}/api/hello`);
-        setPosts(data.banner);
-    };
-    useEffect(() => {
-        fetchPosts();
-    }, []);
+function Banner() {
     const [openForm, setOpenForm] = useState(false);
 
     const handleForm = () => {
@@ -58,7 +65,7 @@ function Banner({data}) {
     return (
         <div id='home' className='relative md:h-[70vh] h-[40vh] lg:h-screen'>
             <Slider {...settings} asNavFor={nav2} ref={(slider1) => setNav1(slider1)} dotsClass='absolute bottom-5 md:bottom-10 dots-banner' >
-                {posts.map((item, index) =>
+                {data.map((item, index) =>
                     <div key={index}>
                         <div id='bannerDestop'
                             className='hidden lg:block h-screen'
@@ -83,7 +90,7 @@ function Banner({data}) {
             </Slider>
             <div className='lg:max-w-[35.5rem] uppercase md:max-w-[350px] max-w-[270px] w-full text-ellipsis overflow-hidden line-clamp-2 absolute lg:bottom-[40px] md:bottom-[80px] bottom-[20px] left-1/2 -translate-x-1/2 text-[#FFC292] lg:text-4xl md:text-3xl text-lg text-center z-20'>
                 <Slider {...settings1} asNavFor={nav1} ref={(slider2) => setNav2(slider2)} >
-                    {posts.map((item, index) =>
+                    {data.map((item, index) =>
                         <p key={index} className='md:leading-[50px]'>{item.content}</p>
                     )}
                 </Slider>

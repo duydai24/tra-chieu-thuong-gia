@@ -1,18 +1,161 @@
 /* eslint-disable @next/next/no-img-element */
-import axios from 'axios';
-import {webHost} from 'config/apiAddress';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Slider from 'react-slick/lib/slider';
 
+const data = [
+  {
+    id: 1,
+    image: 'donors1.png',
+    link: ''
+  },
+  {
+    id: 2,
+    image: 'donors2.png',
+    link: ''
+  },
+  {
+    id: 3,
+    image: 'donors3.png',
+    link: ''
+  },
+  {
+    id: 4,
+    image: 'donors4.png',
+    link: ''
+  },
+  {
+    id: 5,
+    image: 'donors5.png',
+    link: ''
+  },
+  {
+    id: 6,
+    image: 'donors6.png',
+    link: ''
+  },
+  {
+    id: 7,
+    image: 'donors7.png',
+    link: ''
+  },
+  {
+    id: 8,
+    image: 'donors8.png',
+    link: ''
+  },
+  {
+    id: 9,
+    image: 'donors9.png',
+    link: ''
+  },
+  {
+    id: 10,
+    image: 'donors10.png',
+    link: ''
+  },
+  {
+    id: 11,
+    image: 'donors11.png',
+    link: ''
+  },
+  {
+    id: 12,
+    image: 'donors12.png',
+    link: ''
+  },
+  {
+    id: 13,
+    image: 'donors13.png',
+    link: ''
+  },
+  {
+    id: 14,
+    image: 'donors14.png',
+    link: ''
+  },
+  {
+    id: 15,
+    image: 'donors15.png',
+    link: ''
+  },
+  {
+    id: 16,
+    image: 'donors16.png',
+    link: ''
+  },
+  {
+    id: 17,
+    image: 'donors17.png',
+    link: ''
+  },
+  {
+    id: 18,
+    image: 'donors18.png',
+    link: ''
+  },
+  {
+    id: 19,
+    image: 'donors19.png',
+    link: ''
+  },
+  {
+    id: 20,
+    image: 'donors20.png',
+    link: ''
+  },
+  {
+    id: 21,
+    image: 'donors21.png',
+    link: ''
+  },
+  {
+    id: 22,
+    image: 'donors22.png',
+    link: ''
+  },
+  {
+    id: 23,
+    image: 'donors23.png',
+    link: ''
+  },
+  {
+    id: 24,
+    image: 'donors24.png',
+    link: ''
+  },
+  {
+    id: 25,
+    image: 'donors25.png',
+    link: ''
+  },
+  {
+    id: 26,
+    image: 'donors26.png',
+    link: ''
+  },
+  {
+    id: 27,
+    image: 'donors27.png',
+    link: ''
+  },
+  {
+    id: 28,
+    image: 'donors28.png',
+    link: ''
+  },
+  {
+    id: 29,
+    image: 'donors29.png',
+    link: ''
+  },
+  {
+    id: 30,
+    image: 'donors30.png',
+    link: ''
+  },
+];
+
 function Donors() {
-  const [data, setData] = useState();
-  const fetchData = async () => {
-    const {data} = await axios.get(`${webHost}/api/hello`);
-    setData(data.donors);
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   const settings = {
     dots: false,

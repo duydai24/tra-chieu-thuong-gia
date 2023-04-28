@@ -1,20 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable no-multiple-empty-lines */
-import axios from 'axios';
-import {webHost} from 'config/apiAddress';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Slider from 'react-slick/lib/slider';
 
+const data = [
+  {
+    id: 1,
+    image: 'utilities1.jpg'
+  },
+  {
+    id: 2,
+    image: 'utilities2.jpg',
+  },
+  {
+    id: 3,
+    image: 'utilities3.jpg',
+  }
+];
 
 function Utilities() {
-  const [data, setData] = useState();
-  const fetchData = async () => {
-    const {data} = await axios.get(`${webHost}/api/hello`);
-    setData(data.utilities);
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -50,6 +55,7 @@ function Utilities() {
       }
     ]
   };
+
   return (
     <div id='utilities' className="bg-bgMeaningPc bg-fixed bg-cover lg:py-60 md:py-32 py-10 md:px-0 relative">
       <div className="container z-20">
