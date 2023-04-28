@@ -3,8 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://trachieuthuonggia.vn/
+Host: https://trachieuthuonggia.vn
 
 # Sitemaps
 Sitemap: https://trachieuthuonggia.vn/sitemap.xml
-Sitemap: https://trachieuthuonggia.vn/server-sitemap.xml

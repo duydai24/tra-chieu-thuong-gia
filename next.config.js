@@ -1,4 +1,8 @@
+const withPlugins = require('next-compose-plugins');
+const withImages = require('next-images');
+
 const nextConfig = {
+  // Đoạn mã của bạn ở đây
   useFileSystemPublicRoutes: true,
   compress: false,
   poweredByHeader: false,
@@ -15,5 +19,6 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = nextConfig;
-
+module.exports = withPlugins([
+  withImages,
+], nextConfig);
