@@ -48,7 +48,7 @@ function Logo({className}) {
   return (
     <img
       className={'cursor-pointer ' + className}
-      src='/logo.png' alt="TCTG" width={60} height={60}
+      src='./logo.png' alt="TCTG" width={250} height={250}
       onClick={gotoHome} />
   );
 }

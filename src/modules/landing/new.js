@@ -49,13 +49,13 @@ function New() {
     {
       id: 2,
       label: 'Trà Chiều Thương Gia: Cơ hội giao lưu cùng doanh nghiệp Việt Nam',
-      image: 'new1.jpg',
+      image: 'new2.jpg',
       link: 'https://vanhoavaphattrien.vn/tra-chieu-thuong-gia-co-hoi-giao-luu-cung-doanh-nghiep-viet-nam-a18626.html'
     },
     {
       id: 3,
       label: 'Trà Chiều Thương Gia: Tìm kiếm khách hàng mục tiêu trên nền tảng Social Marketing',
-      image: 'new1.jpg',
+      image: 'new3.jpg',
       link: 'https://kinhtevadautu.vn/tra-chieu-thuong-gia-tim-kiem-khach-hang-muc-tieu-tren-nen-tang-social-marketing-3537.html'
     }
   ];

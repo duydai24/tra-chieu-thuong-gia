@@ -15,6 +15,10 @@ const data = [
   {
     id: 3,
     image: 'utilities3.jpg',
+  },
+  {
+    id: 4,
+    image: 'utilities4.jpg',
   }
 ];
 
@@ -63,14 +67,14 @@ function Utilities() {
           <div className="flex text-white md:items-start items-center mb-10 px-5">
             <div className='md:w-1/2 w-full text-center md:text-left'>
               <p className='md:text-xl text-base'>Trà Chiều Thương Gia</p>
-              <p className='font-medium md:text-[40px] text-xl py-3 leading-9 text-[#FFC292] uppercase'>5+ Tiện ích đặc quyền</p>
+              <p className='font-medium md:text-[40px] text-xl py-3 leading-9 text-[#FFC292] uppercase'>Các gói đầu tư nổi bật</p>
             </div>
             <div className='text-xl text-white w-1/2 hidden md:block'>
               <p className="mb-3" >
-                Khi chuẩn mực của sự hưởng thụ không chỉ dừng lại ở sự tiện nghi mà trên hết đó còn là sự hòa mình với thiên nhiên và những giá trị nguyên bản.
+                Kết nối khách hàng với sự hưởng thụ tối đa thông qua truyền thông độc đáo. Chúng tôi mang đến các giải pháp truyền thông chuyên nghiệp và hiệu quả, giúp khách hàng đạt được mục tiêu kinh doanh của họ.
               </p>
               <p className="" >
-                5+ tiện ích với 5 cụm công viên chủ đề độc đáo lấy cảm hứng từ đại lâm mộc mang đến không gian sống sinh thái bền vững cho cộng đồng cư dân
+                Với kinh nghiệm và chuyên môn trong lĩnh vực truyền thông, chúng tôi cam kết đưa đến cho khách hàng các giải pháp truyền thông độc đáo và hiệu quả nhất.
               </p>
             </div>
           </div>
@@ -88,10 +92,10 @@ function Utilities() {
       </div>
       <div className='text-base text-white w-full md:hidden block mt-10 px-5'>
         <p className="my-3" >
-          Khi chuẩn mực của sự hưởng thụ không chỉ dừng lại ở sự tiện nghi mà trên hết đó còn là sự hòa mình với thiên nhiên và những giá trị nguyên bản.
+          Kết nối khách hàng với sự hưởng thụ tối đa thông qua truyền thông độc đáo. Chúng tôi mang đến các giải pháp truyền thông chuyên nghiệp và hiệu quả, giúp khách hàng đạt được mục tiêu kinh doanh của họ.
         </p>
         <p className="" >
-          68+ tiện ích với 5 cụm công viên chủ đề độc đáo lấy cảm hứng từ đại lâm mộc mang đến không gian sống sinh thái bền vững cho cộng đồng cư dân
+          Với kinh nghiệm và chuyên môn trong lĩnh vực truyền thông, chúng tôi cam kết đưa đến cho khách hàng các giải pháp truyền thông độc đáo và hiệu quả nhất.
         </p>
       </div>
     </div>

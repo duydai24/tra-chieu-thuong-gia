@@ -10,6 +10,7 @@ import Guest from './guest';
 import New from './new';
 import Partner from './partner';
 import ReasonHome from './reasonHome';
+import Series from './series';
 import Speakers from './speakers';
 import Utilities from './utilities';
 
@@ -46,6 +47,7 @@ function Landing() {
       </div>
       <Guest />
       <Utilities />
+      <Series />
       <New />
       <ReasonHome />
       <Donors />

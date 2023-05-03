@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import NavLink from 'lib/NavLink';
+import SnowBackground from 'modules/layout/snow';
 import React, {useState} from 'react';
 import {HiChatAlt2} from 'react-icons/hi';
 import {MdPhone} from 'react-icons/md';
@@ -21,7 +22,7 @@ const data = [
     {
         id: 3,
         image: './banner3.jpg',
-        content: 'Smart',
+        content: 'Lifestyle',
     },
 ];
 
@@ -116,6 +117,7 @@ function Banner() {
                 <ContactHome />
             </div>
             <span onClick={handleForm} className={'bg-black absolute bottom-0 left-0 top-0 right-0 opacity-[62%] z-40 hidden ' + overFlow} />
+            <SnowBackground />
         </div >
 
     );

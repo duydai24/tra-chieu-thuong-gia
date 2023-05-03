@@ -3,6 +3,7 @@
 /* eslint-disable @next/next/no-img-element */
 import emailjs from '@emailjs/browser';
 import React, {useRef, useState} from 'react';
+import {toast} from 'react-toastify';
 
 import {validEmail, validName, validPhone} from '../../lib/regex';
 
@@ -50,9 +51,9 @@ function ContactHome() {
         .then(
           (result) => {
             console.log(result);
-            //ToastRoot.show(
-            //  'Cảm ơn đã đến với chúng tôi, chúng tôi sẽ liên lạc với bạn sớm nhất!'
-            //);
+            toast.success(
+              'Cảm ơn đã đến với chúng tôi, chúng tôi sẽ liên lạc với bạn sớm nhất!'
+            );
             setEmail('');
             setName('');
             setMessage('');
@@ -110,7 +111,7 @@ function ContactHome() {
             </div>
           </div>
           <div className='relative'>
-            <input className='bg-gradient-to-r from-[#FFC292] to-[#A96F44] text-[#00392D] px-5 py-2 mt-5 md:mt-10 absolute left-1/2 -translate-x-1/2 lg:float-right mx-auto'
+            <input className='cursor-pointer bg-gradient-to-r from-[#FFC292] to-[#A96F44] text-[#00392D] px-5 py-2 mt-5 md:mt-10 absolute left-1/2 -translate-x-1/2 lg:float-right mx-auto'
               value="Đăng kí ngay"
               type="submit"
             />

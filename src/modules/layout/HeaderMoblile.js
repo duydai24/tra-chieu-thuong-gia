@@ -6,11 +6,12 @@ import {VscChromeClose, VscMenu} from 'react-icons/vsc';
 function HeaderMoBile() {
   const exampleData = [
     {text: 'Tổng quan', id: '#home'},
-    {text: 'Giới thiệu', id: 'introduce'},
-    {text: 'Diễn giả', id: '#utilities'},
-    {text: 'Khách mời', id: '#matBang'},
-    {text: 'Tin Tức', id: '#news'},
-    {text: 'Đối tác', id: '#mew'},
+    {text: 'Giới thiệu', id: '#introduce'},
+    {text: 'Diễn giả', id: '#speakers'},
+    {text: 'Cộng đồng trà chiều', id: '#guest'},
+    {text: 'Sự kiện', id: '#news'},
+    {text: 'Đối tác', id: '#parther'},
+    {text: 'Nhà tài trợ', id: '#donors'},
     {text: 'Liên hệ', id: '#contact'},
   ];
   const [openMenumobile, setOpenMenumobile] = useState(false);

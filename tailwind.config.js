@@ -23,6 +23,7 @@ module.exports = {
           'icon': '#3772F6',
           'text': 'var(--secondText)',
           'cowndown': 'var(--countdown)',
+          'gold': '#FFC292'
         },
         gray: {
           'border': 'var(--descriptionText)',

@@ -195,7 +195,7 @@ function Donors() {
     ],
   };
   return (
-    <div className="lg:py-20 py-10 change-background">
+    <div id='donors' className="lg:py-20 py-10 change-background">
       <div className='container'>
         <div className='pb-10 lg:mr-20 lg:pt-0 w-full text-center md:text-left flex items-center flex-col mx-auto px-2'>
           <p className='lg:text-xl text-base text-[#B3774C] mb-0 lg:mb-2'>Trà Chiều Thương Gia</p>

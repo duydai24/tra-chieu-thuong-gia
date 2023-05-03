@@ -34,16 +34,16 @@ const settings1 = {
 };
 
 const dataText = [
-  {number: '1', content: 'Vị trí kim cương lõi trung tâm Đô Lương'},
-  {number: '2', content: 'Đón đầu quy hoạch “thị xã” Đô Lương'},
-  {number: '3', content: 'Đón đầu xu hướng sống sinh thái'},
-  {number: '4', content: 'Phố thương mại, kinh doanh sầm uất'},
-  {number: '5', content: 'Tiện ích trọn vẹn, đủ đầy'},
-  {number: '6', content: 'Thiết kế tinh hoa, đẳng cấp'},
-  {number: '7', content: 'Thế đất phong thủy thịnh vượng'},
-  {number: '8', content: 'Pháp lý minh bạch, sổ đỏ trao tay'},
-  {number: '9', content: 'Chủ đầu tư uy tín và tận tâm'},
-  {number: '10', content: 'Cơ hội đầu tư chắc thắng'},
+  {number: '1', content: 'Kinh nghiệm chuyên sâu về truyền thông và marketing.'},
+  {number: '2', content: 'Sự đổi mới và áp dụng xu hướng mới nhất.'},
+  {number: '3', content: 'Đa dạng dịch vụ và tận tâm với từng khách hàng.'},
+  {number: '4', content: 'Sáng tạo và cam kết đưa ra kết quả.'},
+  {number: '5', content: 'Giá cả cạnh tranh, hỗ trợ khách hàng chuyên nghiệp.'},
+  {number: '6', content: 'Đội ngũ tư vấn giàu kinh nghiệm, đào tạo chuyên sâu.'},
+  {number: '7', content: 'Luôn áp dụng xu hướng mới nhất trong lĩnh vực.'},
+  {number: '8', content: 'Cam kết mang lại kết quả cao nhất cho khách hàng.'},
+  {number: '9', content: 'Đảm bảo chất lượng dịch vụ tốt nhất cho khách hàng.'},
+  {number: '10', content: 'Hỗ trợ khách hàng nhanh chóng, chuyên nghiệp.'},
 ];
 
 const data = [
@@ -65,7 +65,7 @@ function ReasoHome() {
     <div id='reason' className='lg:pt-20 lg:pb-20 pb-10 pt-5 bg-[#F4EEE4] relative lg:px-0'>
       <img src='./customBgRea.png' alt='' className='absolute -left-32 bottom-20 -rotate-12' width={390} height={250} />
       <div className='container flex md:items-start items-center lg:flex-row flex-col'>
-        <div className='lg:w-1/3 w-full md:mr-10 mt-10'>
+        <div className='lg:w-full w-full md:mr-10 mt-10'>
           <p className='lg:text-[30px] md:text-2xl text-xl font-bold uppercase text-[#187462] mb-1 text-center md:text-left'>10 lý do lựa chọn</p>
           <p className='lg:text-[30px] md:text-2xl text-xl font-bold uppercase text-[#187462] md:mb-14 mb-5 text-center md:text-left'>Asia Business Insider</p>
           <div className='w-full pb-10 block md:hidden'>
@@ -79,9 +79,9 @@ function ReasoHome() {
               )}
             </Slider>
           </div>
-          {dataText.map((item, index) => <div key={index} className='flex items-centere px-5 md:px-0'>
-            <div className='w-7 h-7 font-bold bg-[#187462] rounded-full border-[1px] border-[#FFC292] text-[#FFC292] mr-3 mb-5 relative'><p className='text-center mt-[2px]'>{item.number}</p></div>
-            <p className='md:text-xl text-base text-[#3b3939] font-bold '>{item.content}</p>
+          {dataText.map((item, index) => <div key={index} className='flex items-center px-5 md:px-0 md:mb-5 mb-3'>
+            <div className='w-7 h-7 font-bold bg-[#187462] rounded-full border-[1px] border-[#FFC292] text-[#FFC292] mr-3 relative'><p className='text-center mt-[2px]'>{item.number}</p></div>
+            <p className='md:text-sm text-[11px] text-[#3b3939] font-bold '>{item.content}</p>
           </div>)}
 
         </div>
