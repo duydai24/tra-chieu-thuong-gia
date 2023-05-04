@@ -160,11 +160,11 @@ function Donors() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
     swipeToSlide: true,
     arrows: true,
@@ -201,7 +201,7 @@ function Donors() {
           <p className='lg:text-xl text-base text-[#B3774C] mb-0 lg:mb-2'>Trà Chiều Thương Gia</p>
           <p className='font-medium md:leading-[45px] lg:text-[40px] md:text-xl leading-7 text-base text-[#FFC292] text-center lg:py-3 pt-1 uppercase'>Nhà tài trợ cùng các <br /> hãng thông tấn báo chí trong nước</p>
         </div >
-        <div className='hidden md:block lg:pt-10'>
+        <div className='hidden md:block lg:mt-10 bg-white rounded-2xl'>
           <Slider {...settings} dotsClass='absolute dots-banner' >
             {data?.map((item, index) =>
               <div key={index} className='flex items-center justify-between h-auto'>
@@ -210,7 +210,7 @@ function Donors() {
             )}
           </Slider>
         </div>
-        <div className='block md:hidden lg:pt-10 px-5'>
+        <div className='block md:hidden lg:pt-10 px-5 bg-white rounded-2xl mx-5'>
           <Slider {...settings} dotsClass='absolute dots-banner' >
             {data?.map((item, index) =>
               <div key={index} className='flex items-center justify-between h-auto'>

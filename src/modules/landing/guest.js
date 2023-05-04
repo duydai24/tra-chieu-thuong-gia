@@ -3,153 +3,269 @@ import React from 'react';
 
 const data = [
   {
-    id: 1,
-    name: 'MS. LÊ THỊ KIM LOAN',
-    image: 'Artboard 1.png',
+    lable: 'Nghệ Sĩ - KOL - KOC',
+    name: 'CA SĨ. ĐOÀN DI BĂNG',
+    image: 'anhTron28.png',
     link: ''
   },
   {
-    id: 2,
-    name: 'MS. CAO THỊ HỒNG VÂN',
-    image: 'Artboard 2.png',
+    lable: 'Nghệ Sĩ - KOL - KOC',
+    name: 'CA SĨ. PHẠM ĐĂNG ANH THƯ',
+    image: 'anhTron29.png',
     link: ''
   },
   {
-    id: 3,
-    name: 'MS. SUKHA PANNA',
-    image: 'Artboard 3.png',
+    lable: 'Nghệ Sĩ - KOL - KOC',
+    name: 'CA SĨ. NHẬT HỒNG DENMARK',
+    image: 'anhTron21.png',
     link: ''
   },
   {
-    id: 4,
-    name: 'CEO - ĐỖ NGỌC BÍCH',
-    image: 'Artboard 18.png',
-    link: 'https://www.dongocbich.com/'
-  },
-  {
-    id: 5,
-    name: 'MR. JIKEY',
-    image: 'Artboard 4.png',
+    lable: 'Nghệ Sĩ - KOL - KOC',
+    name: 'MC - CA SĨ. MÃ PHÚ VINH',
+    image: 'anhTron22.png',
     link: ''
   },
   {
-    id: 6,
-    name: 'MR. LÊ HOÀNG MINH',
-    image: 'Artboard 5.png',
+    lable: 'Nghệ Sĩ - KOL - KOC',
+    name: 'NTK. VÕ VIỆT CHUNG',
+    image: 'anhTron25.png',
     link: ''
   },
   {
-    id: 7,
-    name: 'CEO - LÊ HỒNG ÂN',
-    image: 'Artboard 6.png',
-    link: 'https://www.thoibaoasiabusiness.com/truyenthongbaochi'
-  },
-  {
-    id: 8,
-    name: 'MR. NGUYỄN MINH ANH',
-    image: 'Artboard 7.png',
+    lable: 'Nghệ Sĩ - KOL - KOC',
+    name: 'CA SĨ. HỒ QUANG LỘC',
+    image: 'anhTron24.png',
     link: ''
   },
   {
-    id: 9,
-    name: 'MR. NAM ANH',
-    image: 'Artboard 8.png',
+    lable: 'Nghệ Sĩ - KOL - KOC',
+    name: 'CA NHẠC SĨ. NGUYỄN MINH ANH',
+    image: 'anhTron26.png',
+    link: ''
+  },
+
+  {
+    lable: 'Hoa hậu - Á hậu - Tổ chức hoa hậu',
+    name: 'HOA HẬU. NGUYỄN THỊ HỒNG VÂN',
+    image: 'anhTron15.png',
+    link: ''
+  }, {
+    lable: 'Hoa hậu - Á hậu - Tổ chức hoa hậu',
+    name: 'HOA HẬU DOANH NHÂN. VÕ THU SƯƠNG',
+    image: 'anhTron2.png',
+    link: ''
+  }, {
+    lable: 'Hoa hậu - Á hậu - Tổ chức hoa hậu',
+    name: 'HOA HẬU DOANH NHÂN. HƯƠNG SALA',
+    image: 'anhTron3.png',
+    link: ''
+  }, {
+    lable: 'Hoa hậu - Á hậu - Tổ chức hoa hậu',
+    name: 'HOA HẬU ĐẠI SỨ. AMBER HẠNH',
+    image: 'anhTron1.png',
+    link: ''
+  },
+
+  {
+    lable: 'Hoa hậu - Á hậu - Tổ chức hoa hậu',
+    name: 'ĐẠI SỨ THƯƠNG HIỆU. THẠCH HOA',
+    image: 'anhTron20.png',
     link: ''
   },
   {
-    id: 1,
-    name: 'MS. LÊ THỊ KIM LOAN1',
-    image: 'Artboard 9.png',
+    lable: 'Hoa hậu - Á hậu - Tổ chức hoa hậu',
+    name: 'CHỦ NHIỆM CLB MISS SAIGON. PHẠM NGUYỆT',
+    image: 'anhTron19.png',
+    link: ''
+  }, {
+    lable: 'Hoa hậu - Á hậu - Tổ chức hoa hậu',
+    name: 'CÔNG TY HOA HẬU. BẦU HÒA',
+    image: 'anhTron16.png',
+    link: ''
+  },
+
+  {
+    lable: 'Quỹ đầu tư trong nước & Quốc tế',
+    name: 'MR. XÂM ANH TÀI',
+    image: 'anhTron31.png',
     link: ''
   },
   {
-    id: 2,
-    name: 'MS. CAO THỊ HỒNG VÂN',
-    image: 'Artboard 10.png',
+    lable: 'Kiến trúc - Xây dựng - BĐS',
+    name: 'CEO. TRẦN ĐỨC TÂM',
+    image: 'anhTron7.png',
     link: ''
   },
   {
-    id: 3,
-    name: 'MS. SUKHA PANNA',
-    image: 'Artboard 11.png',
+    lable: 'Kiến trúc - Xây dựng - BĐS',
+    name: 'CEO. NGUYỄN QUỐC THI',
+    image: 'anhTron23.png',
+    link: ''
+  }, {
+    lable: 'Kiến trúc - Xây dựng - BĐS',
+    name: 'VINHOME REAL ESTATE. NGÔ TUẤN ANH',
+    image: 'anhTron17.png',
+    link: ''
+  }, {
+    lable: 'Kiến trúc - Xây dựng - BĐS',
+    name: 'CEO. NGUYỄN HOÀNG ANH',
+    image: 'anhTron11.png',
+    link: ''
+  },
+
+  {
+    lable: 'Truyền thông - báo chí',
+    name: 'NHÀ BÁO. LƯƠNG NGỌC HÂN',
+    image: 'anhTron12.png',
     link: ''
   },
   {
-    id: 4,
-    name: 'CEO - ĐỖ NGỌC BÍCH',
-    image: 'Artboard 12.png',
-    link: 'https://www.dongocbich.com/'
-  },
-  {
-    id: 5,
-    name: 'MR. JIKEY',
-    image: 'Artboard 13.png',
+    lable: 'Truyền thông - báo chí',
+    name: 'Á HẬU ĐIỆN ẢNH. ELDOS',
+    image: 'anhTron5.png',
     link: ''
   },
   {
-    id: 6,
-    name: 'MR. LÊ HOÀNG MINH',
-    image: 'Artboard 14.png',
+    lable: 'Truyền thông - báo chí',
+    name: 'PGĐ. MR ĐAN',
+    image: 'anhTron10.png',
     link: ''
   },
   {
-    id: 7,
-    name: 'CEO - LÊ HỒNG ÂN',
-    image: 'Artboard 15.png',
-    link: 'https://www.thoibaoasiabusiness.com/truyenthongbaochi'
-  },
-  {
-    id: 8,
-    name: 'MR. NGUYỄN MINH ANH',
-    image: 'Artboard 16.png',
+    lable: 'Công nghệ',
+    name: 'MR. PHẠM THÀNH NHỨT',
+    image: 'anhTron8.png',
     link: ''
   },
   {
-    id: 9,
-    name: 'MR. NAM ANH',
-    image: 'Artboard 17.png',
+    lable: 'Công nghệ',
+    name: 'GĐ. NGUYỄN CÔNG TÂM',
+    image: 'anhTron9.png',
+    link: ''
+  },
+
+  {
+    lable: 'Chăm sóc sức khoẻ - Thực phẩm - Làm đẹp',
+    name: 'MS. NGUYỄN THỊ NGỌC SOAN',
+    image: 'anhTron6.png',
+    link: ''
+  },
+  {
+    lable: 'Chăm sóc sức khoẻ - Thực phẩm - Làm đẹp',
+    name: 'DOCTOR. TRUNG NGUYỄN',
+    image: 'anhTron30.png',
+    link: ''
+  },
+  {
+    lable: 'Chăm sóc sức khoẻ - Thực phẩm - Làm đẹp',
+    name: 'DOCTOR. HẢI HỒ',
+    image: 'anhTron13.png',
+    link: ''
+  },
+  {
+    lable: 'Chăm sóc sức khoẻ - Thực phẩm - Làm đẹp',
+    name: 'DOANH NHÂN. MINH MINH',
+    image: 'anhTron14.png',
+    link: ''
+  },
+  {
+    lable: 'Đào tạo',
+    name: 'GIẢNG VIÊN. THÁI TRẠCH MAI',
+    image: 'anhTron18.png',
+    link: ''
+  },
+  {
+    lable: 'Đào tạo',
+    name: 'CEO. IRIS PHƯƠNG',
+    image: 'anhTron27.png',
     link: ''
   }
 ];
 
 function Guest() {
 
-  const splitElements = () => {
-    const result = [];
-    let i = 0;
-    while (i < data?.length) {
-      if (result.length % 2 === 0) {
-        result.push(data?.slice(i, i + 4));
-        i += 4;
-      } else {
-        result.push(data?.slice(i, i + 5));
-        i += 5;
-      }
+  const classifiedData = data.reduce((acc, curr) => {
+    // Nếu nhãn (label) của đối tượng hiện tại chưa có trong đối tượng chứa các nhóm dữ liệu (acc)
+    if (!acc[curr.lable]) {
+      // Tạo một mảng mới để chứa các đối tượng có nhãn (label) tương ứng
+      acc[curr.lable] = [curr];
+    } else {
+      // Thêm đối tượng hiện tại vào mảng tương ứng với nhãn (label) của nó
+      acc[curr.lable].push(curr);
     }
-    return result;
-  };
+    return acc;
+  }, {});
 
-  const staggeredElements = splitElements();
+  //const splitElements = () => {
+  //  const result = [];
+  //  let i = 0;
+  //  while (i < data?.length) {
+  //    if (result.length % 2 === 0) {
+  //      result.push(data?.slice(i, i + 4));
+  //      i += 4;
+  //    } else {
+  //      result.push(data?.slice(i, i + 5));
+  //      i += 5;
+  //    }
+  //  }
+  //  return result;
+  //};
+
+  //const staggeredElements = splitElements();
   return (
     <div id='guest' className='change-background py-24'>
       <div className='lg:mr-20 lg:pt-0 w-full text-center md:text-left flex items-center flex-col mx-auto'>
         <p className='lg:text-xl text-base text-[#B3774C] mb-5'>Trà Chiều Thương Gia</p>
         <p className='font-medium md:leading-[45px] lg:text-[40px] md:text-xl leading-9 text-lg text-[#FFC292] lg:py-3 pt-1 uppercase'>CỘNG ĐỒNG TRÀ CHIỀU THƯƠNG GIA</p>
       </div >
-      <div className='flex items-center flex-col pt-10'>
-        <p className='text-blue-gold font-bold text-left text-2xl bg-black shadow-xl p-5 rounded-xl'>Nghệ sỹ - KOL - KOC</p>
-        {staggeredElements.map((group, index) => (
-          <div className='items-center flex-col md:flex-row' key={index} style={{display: 'flex'}}>
-            {group.map((item) => (
-              <div className='items-center flex flex-col hover:scale-110 transition-all group cursor-pointer' key={item.id} style={{flex: 1}}>
-                <img src={`./khachMoi/${item.image}`} alt={item.name} height={350} width={350} />
-                <p className='text-[#FFC292] group-hover:text-red-600 font-bold mt-[-20px]'>{item.name}</p>
+      <div className='flex flex-col pt-10 container'>
+        {
+          Object.keys(classifiedData).map((label) => {
+            const splitElements = () => {
+              const result = [];
+              let i = 0;
+              while (i < classifiedData[label]?.length) {
+                if (result.length % 2 === 0) {
+                  result.push(classifiedData[label]?.slice(i, i + 4));
+                  i += 4;
+                } else {
+                  result.push(classifiedData[label]?.slice(i, i + 5));
+                  i += 5;
+                }
+              }
+              return result;
+            };
+
+            const staggeredElements = splitElements();
+            return (
+              <div key={label} className='mb-20'>
+                <div className='flex items-center justify-between rounded-lg'>
+                  <span className='h-1 md:w-[90%] w-0 bg-blue-gold rounded-full mr-5'></span>
+                  <p className='text-blue-gold font-bold text-center md:text-2xl uppercase text-lg p-3 rounded-xl md:mx-auto mx-5 w-full hidden md:inline-block border-[1px] border-blue-gold '> {label} </p>
+                  <p className='bg-blue-gold text-[#004c3d] font-bold  text-center text-lg p-3  rounded-xl md:mx-auto w-full block md:hidden'>- {label} -</p>
+                  <span className='h-1 md:w-[90%] w-0 bg-blue-gold rounded-full ml-5'></span>
+                </div>
+                {
+                  staggeredElements.map((group, index) => (
+                    <div className='items-center flex-col md:flex-row' key={index} style={{display: 'flex'}}>
+                      {group.map((item) => (
+                        <div className='items-center flex flex-col hover:scale-110 transition-all group cursor-pointer' key={item.id} style={{flex: 1}}>
+                          <img src={`/khachMoi/${item.image}`} alt={item.name} height={350} width={350} />
+                          <p className='text-[#FFC292] group-hover:text-red-600 font-bold mt-[-20px]'>{item.name}</p>
+                        </div>
+                      ))}
+                    </div>
+                  ))
+                }
               </div>
-            ))}
-          </div>
-        ))}
+            );
+          })
+        }
       </div>
     </div>
   );
 }
+
 export default Guest;
+

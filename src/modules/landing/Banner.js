@@ -22,7 +22,7 @@ const data = [
     {
         id: 3,
         image: './banner3.jpg',
-        content: 'Lifestyle',
+        content: 'Lifestyle - Phong Cách Sống',
     },
 ];
 

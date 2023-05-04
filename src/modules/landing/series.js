@@ -4,85 +4,224 @@ import Slider from 'react-slick/lib/slider';
 
 const data = [
   {
-    image: 'poster1.png'
+    image: 'poster1.jpg'
   },
   {
-    image: 'poster2.png'
+    image: 'poster2.jpg'
   },
   {
-    image: 'poster3.png'
+    image: 'poster3.jpg'
   },
   {
-    image: 'poster4.png'
+    image: 'poster4.jpg'
   },
   {
-    image: 'poster5.png'
+    image: 'poster5.jpg'
   },
   {
-    image: 'poster6.png'
+    image: 'poster6.jpg'
   },
   {
-    image: 'poster7.png'
+    image: 'poster7.jpg'
   },
   {
-    image: 'poster8.png'
+    image: 'poster8.jpg'
   },
   {
-    image: 'poster9.png'
+    image: 'poster9.jpg'
   },
   {
-    image: 'poster10.png'
+    image: 'poster10.jpg'
   },
   {
-    image: 'poster11.png'
+    image: 'poster11.jpg'
   },
   {
-    image: 'poster12.png'
+    image: 'poster12.jpg'
   },
   {
-    image: 'poster13.png'
+    image: 'poster13.jpg'
   },
   {
-    image: 'poster14.png'
+    image: 'poster14.jpg'
   },
   {
-    image: 'poster15.png'
+    image: 'poster15.jpg'
   },
   {
-    image: 'poster16.png'
+    image: 'poster16.jpg'
   },
   {
-    image: 'poster17.png'
+    image: 'poster17.jpg'
   },
   {
-    image: 'poster17.png'
+    image: 'poster18.jpg'
   },
   {
-    image: 'poster18.png'
+    image: 'poster19.jpg'
   },
   {
-    image: 'poster19.png'
+    image: 'poster20.jpg'
   },
   {
-    image: 'poster20.png'
+    image: 'poster21.jpg'
   },
   {
-    image: 'poster21.png'
+    image: 'poster22.jpg'
   },
   {
-    image: 'poster22.png'
+    image: 'poster23.jpg'
   },
   {
-    image: 'poster23.png'
-  },
-  {
-    image: 'poster24.png'
-  },
-  {
-    image: 'poster25.png'
+    image: 'poster24.jpg'
   }
 ];
-
+const data2 = [
+  {
+    image: 'poster1.jpg'
+  },
+  {
+    image: 'poster2.jpg'
+  },
+  {
+    image: 'poster3.jpg'
+  },
+  {
+    image: 'poster4.jpg'
+  },
+  {
+    image: 'poster5.jpg'
+  },
+  {
+    image: 'poster6.jpg'
+  },
+  {
+    image: 'poster7.jpg'
+  },
+  {
+    image: 'poster8.jpg'
+  },
+  {
+    image: 'poster9.jpg'
+  },
+  {
+    image: 'poster10.jpg'
+  },
+  {
+    image: 'poster11.jpg'
+  },
+  {
+    image: 'poster12.jpg'
+  },
+  {
+    image: 'poster13.jpg'
+  },
+  {
+    image: 'poster14.jpg'
+  },
+  {
+    image: 'poster15.jpg'
+  },
+  {
+    image: 'poster16.jpg'
+  },
+  {
+    image: 'poster17.jpg'
+  },
+  {
+    image: 'poster18.jpg'
+  },
+  {
+    image: 'poster19.jpg'
+  },
+  {
+    image: 'poster20.jpg'
+  },
+  {
+    image: 'poster21.jpg'
+  },
+  {
+    image: 'poster22.jpg'
+  },
+  {
+    image: 'poster23.jpg'
+  },
+  {
+    image: 'poster24.jpg'
+  }
+  ,
+  {
+    image: 'poster25.jpg'
+  }
+  ,
+  {
+    image: 'poster26.jpg'
+  }
+  ,
+  {
+    image: 'poster27.jpg'
+  }
+  ,
+  {
+    image: 'poster28.jpg'
+  }
+  ,
+  {
+    image: 'poster29.jpg'
+  }
+  ,
+  {
+    image: 'poster30.jpg'
+  }
+  ,
+  {
+    image: 'poster31.jpg'
+  }
+  ,
+  {
+    image: 'poster32.jpg'
+  }
+  ,
+  {
+    image: 'poster33.jpg'
+  }
+  ,
+  {
+    image: 'poster34.jpg'
+  }
+  ,
+  {
+    image: 'poster35.jpg'
+  }
+  ,
+  {
+    image: 'poster36.jpg'
+  }
+  ,
+  {
+    image: 'poster37.jpg'
+  }
+  ,
+  {
+    image: 'poster38.jpg'
+  }
+  ,
+  {
+    image: 'poster39.jpg'
+  }
+  ,
+  {
+    image: 'poster40.jpg'
+  }
+  ,
+  {
+    image: 'poster41.jpg'
+  }
+  ,
+  {
+    image: 'poster42.jpg'
+  }
+];
 function Series() {
 
   const settings = {
@@ -95,6 +234,33 @@ function Series() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          autoplaySpeed: 2000,
+          speed: 500,
+          slidesToScroll: 1
+        }
+      }
+    ],
   };
 
   return (
@@ -104,22 +270,22 @@ function Series() {
           <p className='lg:text-xl text-base text-[#B3774C]'>Trà Chiều Thương Gia</p>
           <p className='font-medium md:leading-[55px] lg:text-[40px] md:text-xl leading-9 text-lg text-[#187462] lg:py-3 pt-1 uppercase'>Series Trà Chiều</p>
         </div >
-        <div className='mt-20'>
-          <p className='text-[#00392D] font-medium text-3xl mb-5'>Trà chiều thương gia số đầu tiên:</p>
+        <div className='md:mt-20 mt-10 px-5 md:px-0'>
+          <p className='text-[#00392D] font-medium text-xl md:text-3xl mb-5'>Trà chiều thương gia số đầu tiên:</p>
           <Slider {...settings}>
             {data?.map((item, index) =>
               <div key={index} >
-                <img alt={item.image} src={`/thiepmoi/lan1/${item.image}`} width={280} height={100} className='mx-auto' />
+                <img alt={item.image} src={`/thiepmoi/lan1/${item.image}`} width={280} height={100} className='mx-auto w-[165px] md:w-[280px]' />
               </div>
             )}
           </Slider>
         </div>
-        <div className='mt-20'>
-          <p className='text-[#00392D] font-medium text-3xl mb-5'>Trà chiều thương gia số thứ 2:</p>
+        <div className='md:mt-20 mt-10 px-5 md:px-0'>
+          <p className='text-[#00392D] font-medium text-xl md:text-3xl mb-5'>Trà chiều thương gia số thứ 2:</p>
           <Slider {...settings}>
-            {data?.map((item, index) =>
+            {data2?.map((item, index) =>
               <div key={index} >
-                <img alt={item.image} src={`/thiepmoi/lan1/${item.image}`} width={280} height={100} className='mx-auto' />
+                <img alt={item.image} src={`/thiepmoi/lan2/${item.image}`} width={280} height={100} className='mx-auto w-[165px] md:w-[280px]' />
               </div>
             )}
           </Slider>
