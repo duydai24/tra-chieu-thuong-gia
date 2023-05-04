@@ -1,12 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import NavLink from 'lib/NavLink';
 import {useRouter} from 'next/router';
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useState} from 'react';
 import {FaMusic, FaTshirt} from 'react-icons/fa';
-import {toast} from 'react-toastify';
 
-function Menu() {
-    //const [openTheme, setOpenThem] = useState(false);
+function Menu({player, className}) {
 
     const [background, setBackground] = useState('#00392D');
     const [backgroundFooter, setBackgroundFooter] = useState('#004c3d');
@@ -22,23 +20,6 @@ function Menu() {
     const router = useRouter();
     const tab = router.asPath;
 
-    const [playing, setPlaying] = useState(false);
-    let audio;
-    if (typeof Audio != 'undefined') {
-        audio = useRef(new Audio('/music.mp3'));
-        audio.current.loop = true;
-    }
-    const player = () => setPlaying(!playing);
-
-    useEffect(() => {
-        playing ? audio.current.play() : audio.current.pause();
-    }, [audio, playing]);
-
-    useEffect(() => {
-        playing ? toast.success('Music On!') : toast('Music Off!');
-    }, [playing]);
-
-    const _className = playing === true ? 'bg-blue-gold' : 'bg-[#000000]';
     return (
         <div className='hidden md:block'>
             <div className='flex items-center justify-between'>
@@ -54,7 +35,7 @@ function Menu() {
                 <span onClick={handleClick} className='p-3 rounded-full change-background cursor-pointer'>
                     <FaTshirt />
                 </span>
-                <span onClick={player} className={'p-3 cursor-pointer ml-3 rounded-full ' + _className}>
+                <span onClick={player} className={'p-3 cursor-pointer ml-3 rounded-full ' + className}>
                     <FaMusic />
                 </span>
             </div >

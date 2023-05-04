@@ -1,11 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import NavLink from 'lib/NavLink';
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useState} from 'react';
 import {FaMusic, FaTshirt} from 'react-icons/fa';
 import {VscChromeClose, VscMenu} from 'react-icons/vsc';
-import {toast} from 'react-toastify';
 
-function HeaderMoBile() {
+function HeaderMoBile({player, className}) {
   const exampleData = [
     {text: 'Tổng quan', id: '#home'},
     {text: 'Giới thiệu', id: '#introduce'},
@@ -37,23 +36,7 @@ function HeaderMoBile() {
     document.documentElement.style.setProperty('--footer', newBackgroundfooter);
     document.documentElement.style.setProperty('--icons', newBackgroundIcons);
   };
-  const [playing, setPlaying] = useState(false);
-  let audio;
-  if (typeof Audio != 'undefined') {
-    audio = useRef(new Audio('/music.mp3'));
-    audio.current.loop = true;
-  }
-  const player = () => setPlaying(!playing);
 
-  useEffect(() => {
-    playing ? audio.current.play() : audio.current.pause();
-  }, [audio, playing]);
-
-  useEffect(() => {
-    playing ? toast.success('Music On!') : toast('Music Off!');
-  }, [playing]);
-
-  const _className = playing === true ? 'bg-blue-gold' : 'bg-[#000000]';
   return (
     <div>
       <div className='fixed bottom-0 right-0 left-0 block md:hidden z-[100] overflow-hidden'>
@@ -82,7 +65,7 @@ function HeaderMoBile() {
           <span onClick={handleClick} className='p-3 rounded-full change-background-icons cursor-pointer text-white'>
             <FaTshirt />
           </span>
-          <span onClick={player} className={'p-3 cursor-pointer ml-3 rounded-full text-white ' + _className}>
+          <span onClick={player} className={'p-3 cursor-pointer ml-3 rounded-full text-white ' + className}>
             <FaMusic />
           </span>
         </div>
