@@ -2,18 +2,18 @@
 import React from 'react';
 
 const data = [
-  {
-    lable: 'Nghệ Sĩ - KOL - KOC',
-    name: 'CA SĨ. ĐOÀN DI BĂNG',
-    image: 'anhTron28.png',
-    link: ''
-  },
-  {
-    lable: 'Nghệ Sĩ - KOL - KOC',
-    name: 'CA SĨ. PHẠM ĐĂNG ANH THƯ',
-    image: 'anhTron29.png',
-    link: ''
-  },
+  //{
+  //  lable: 'Nghệ Sĩ - KOL - KOC',
+  //  name: 'CA SĨ. ĐOÀN DI BĂNG',
+  //  image: 'anhTron28.png',
+  //  link: ''
+  //},
+  //{
+  //  lable: 'Nghệ Sĩ - KOL - KOC',
+  //  name: 'CA SĨ. PHẠM ĐĂNG ANH THƯ',
+  //  image: 'anhTron29.png',
+  //  link: ''
+  //},
   {
     lable: 'Nghệ Sĩ - KOL - KOC',
     name: 'CA SĨ. NHẬT HỒNG DENMARK',
@@ -26,12 +26,12 @@ const data = [
     image: 'anhTron22.png',
     link: ''
   },
-  {
-    lable: 'Nghệ Sĩ - KOL - KOC',
-    name: 'NTK. VÕ VIỆT CHUNG',
-    image: 'anhTron25.png',
-    link: ''
-  },
+  //{
+  //  lable: 'Nghệ Sĩ - KOL - KOC',
+  //  name: 'NTK. VÕ VIỆT CHUNG',
+  //  image: 'anhTron25.png',
+  //  link: ''
+  //},
   {
     lable: 'Nghệ Sĩ - KOL - KOC',
     name: 'CA SĨ. HỒ QUANG LỘC',
@@ -214,9 +214,9 @@ function Guest() {
 
   //const staggeredElements = splitElements();
   return (
-    <div id='guest' className='change-background py-24'>
+    <div id='guest' className='change-background md:py-24 py-14'>
       <div className='lg:mr-20 lg:pt-0 w-full text-center md:text-left flex items-center flex-col mx-auto'>
-        <p className='lg:text-xl text-base text-[#B3774C] mb-5'>Trà Chiều Thương Gia</p>
+        <p className='lg:text-xl text-base text-[#B3774C] md:mb-5'>Trà Chiều Thương Gia</p>
         <p className='font-medium md:leading-[45px] lg:text-[40px] md:text-xl leading-9 text-lg text-[#FFC292] lg:py-3 pt-1 uppercase'>CỘNG ĐỒNG TRÀ CHIỀU THƯƠNG GIA</p>
       </div >
       <div className='flex flex-col pt-10 container'>
@@ -243,7 +243,7 @@ function Guest() {
                 <div className='flex items-center justify-between rounded-lg'>
                   <span className='h-1 md:w-[90%] w-0 bg-blue-gold rounded-full mr-5'></span>
                   <p className='text-blue-gold font-bold text-center md:text-2xl uppercase text-lg p-3 rounded-xl md:mx-auto mx-5 w-full hidden md:inline-block border-[1px] border-blue-gold '> {label} </p>
-                  <p className='bg-blue-gold text-[#004c3d] font-bold  text-center text-lg p-3  rounded-xl md:mx-auto w-full block md:hidden'>- {label} -</p>
+                  <p className='bg-blue-gold text-[#004c3d] font-bold text-center text-base p-2 uppercase rounded-xl md:mx-auto w-full block md:hidden'>- {label} -</p>
                   <span className='h-1 md:w-[90%] w-0 bg-blue-gold rounded-full ml-5'></span>
                 </div>
                 {

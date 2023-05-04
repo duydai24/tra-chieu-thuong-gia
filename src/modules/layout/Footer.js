@@ -18,7 +18,7 @@ function Footer() {
                                 <Logo className='lg:w-1/2 w-2/3 pt-10 pb-5 lg:pt-0 lg:pb-10 mx-auto md:mx-0' />
                             </div>
                             <div className=''>
-                                <div className='text-[14px] flex items-start flex-col cursor-pointer'>
+                                <div className='text-xs md:text-[14px] flex items-start flex-col cursor-pointer'>
                                     <span className='w-auto pb-5 hover:text-[#FFC292] cursor-pointer'>Địa chỉ:Tầng 30 Landmark 81, p22, Bình Thạnh, Tp Hồ Chí Minh</span>
                                     <span className='w-auto pb-5 hover:text-[#FFC292]'>Hotline: 0938.963.823</span>
                                     <span className='w-auto hover:text-[#FFC292]'>Email: asiabusinessinsider2022@gmail.com</span>
