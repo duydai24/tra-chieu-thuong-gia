@@ -104,7 +104,7 @@ function Speakers() {
                 <NavLink key={i} to={item.link} newtab>
                   <div className='items-center flex flex-col hover:scale-110 transition-all group cursor-pointer' style={{flex: 1}}>
                     <img src={`diengia/${item.image}`} alt={item.name} height={350} width={350} />
-                    <p className='text-[#004c3d] group-hover:text-red-600 font-bold mt-[-20px]'>{item.name}</p>
+                    <p className='text-[#004c3d] group-hover:text-red-600 font-bold mt-[-20px] uppercase'>{item.name}</p>
                   </div>
                 </NavLink>
               ))}

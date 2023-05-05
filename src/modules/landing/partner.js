@@ -29,6 +29,8 @@ function Partner() {
     dots: false,
     infinite: true,
     speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToShow: 2,
     slidesToScroll: 1,
   };

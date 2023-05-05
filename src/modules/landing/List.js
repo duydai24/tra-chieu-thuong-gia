@@ -32,7 +32,7 @@ function Landing() {
           ]
         },
         images: [{
-          url: '',
+          url: 'https://www.trachieuthuonggia.vn/thumbnail.jpg',
           width: 660,
           height: 330,
           alt: 'architecture , design, ...'

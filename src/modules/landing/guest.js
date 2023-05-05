@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import NavLink from 'lib/NavLink';
 import React from 'react';
 
 const data = [
@@ -14,6 +15,30 @@ const data = [
   //  image: 'anhTron29.png',
   //  link: ''
   //},
+  {
+    lable: 'Truyền thông - báo chí',
+    name: 'NHÀ BÁO. LƯƠNG NGỌC HÂN',
+    image: 'anhTron12.png',
+    link: 'http://nguoisanhdieu.vn/'
+  },
+  {
+    lable: 'Truyền thông - báo chí',
+    name: 'Madam. lê thị mộng trinh',
+    image: 'anhTron32.png',
+    link: 'http://globalwoman.vn/'
+  },
+  {
+    lable: 'Truyền thông - báo chí',
+    name: 'Á HẬU ĐIỆN ẢNH. ELDOS',
+    image: 'anhTron5.png',
+    link: ''
+  },
+  {
+    lable: 'Truyền thông - báo chí',
+    name: 'PGĐ. MR ĐAN',
+    image: 'anhTron10.png',
+    link: ''
+  },
   {
     lable: 'Nghệ Sĩ - KOL - KOC',
     name: 'CA SĨ. NHẬT HỒNG DENMARK',
@@ -115,24 +140,6 @@ const data = [
   },
 
   {
-    lable: 'Truyền thông - báo chí',
-    name: 'NHÀ BÁO. LƯƠNG NGỌC HÂN',
-    image: 'anhTron12.png',
-    link: ''
-  },
-  {
-    lable: 'Truyền thông - báo chí',
-    name: 'Á HẬU ĐIỆN ẢNH. ELDOS',
-    image: 'anhTron5.png',
-    link: ''
-  },
-  {
-    lable: 'Truyền thông - báo chí',
-    name: 'PGĐ. MR ĐAN',
-    image: 'anhTron10.png',
-    link: ''
-  },
-  {
     lable: 'Công nghệ',
     name: 'MR. PHẠM THÀNH NHỨT',
     image: 'anhTron8.png',
@@ -221,7 +228,7 @@ function Guest() {
       </div >
       <div className='flex flex-col pt-10 container'>
         {
-          Object.keys(classifiedData).map((label) => {
+          Object.keys(classifiedData).map((label, key) => {
             const splitElements = () => {
               const result = [];
               let i = 0;
@@ -239,21 +246,23 @@ function Guest() {
 
             const staggeredElements = splitElements();
             return (
-              <div key={label} className='mb-20'>
+              <div key={key} className='mb-20'>
                 <div className='flex items-center justify-between rounded-lg'>
-                  <span className='h-1 md:w-[90%] w-0 bg-blue-gold rounded-full mr-5'></span>
+                  <span className='h-1 md:w-[70%] w-0 bg-blue-gold rounded-full mr-5'></span>
                   <p className='text-blue-gold font-bold text-center md:text-2xl uppercase text-lg p-3 rounded-xl md:mx-auto mx-5 w-full hidden md:inline-block border-[1px] border-blue-gold '> {label} </p>
                   <p className='bg-blue-gold text-[#004c3d] font-bold text-center text-base p-2 uppercase rounded-xl md:mx-auto w-full block md:hidden'>- {label} -</p>
-                  <span className='h-1 md:w-[90%] w-0 bg-blue-gold rounded-full ml-5'></span>
+                  <span className='h-1 md:w-[70%] w-0 bg-blue-gold rounded-full ml-5'></span>
                 </div>
                 {
                   staggeredElements.map((group, index) => (
-                    <div className='items-center flex-col md:flex-row' key={index} style={{display: 'flex'}}>
-                      {group.map((item) => (
-                        <div className='items-center flex flex-col hover:scale-110 transition-all group cursor-pointer' key={item.id} style={{flex: 1}}>
-                          <img src={`/khachMoi/${item.image}`} alt={item.name} height={350} width={350} />
-                          <p className='text-[#FFC292] group-hover:text-red-600 font-bold mt-[-20px]'>{item.name}</p>
-                        </div>
+                    <div className='items-center flex-col justify-center md:flex-row' key={index} style={{display: 'flex'}}>
+                      {group.map((item, i) => (
+                        <NavLink key={i} to={item.link} newtab>
+                          <div className='items-center flex justify-center flex-col hover:scale-110 transition-all group cursor-pointer' style={{flex: 1}}>
+                            <img src={`/khachMoi/${item.image}`} alt={item.name} height={350} width={350} />
+                            <p className='text-[#FFC292] group-hover:text-red-600 md:text-base text-sm font-bold mt-[-20px] uppercase'>{item.name}</p>
+                          </div>
+                        </NavLink>
                       ))}
                     </div>
                   ))
@@ -263,7 +272,7 @@ function Guest() {
           })
         }
       </div>
-    </div>
+    </div >
   );
 }
 

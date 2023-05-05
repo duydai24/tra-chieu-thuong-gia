@@ -19,6 +19,10 @@ const data = [
   {
     id: 4,
     image: 'utilities4.jpg',
+  },
+  {
+    id: 5,
+    image: 'utilities5.jpg',
   }
 ];
 
