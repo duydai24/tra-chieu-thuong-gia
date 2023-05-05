@@ -264,7 +264,7 @@ function Series() {
   };
 
   return (
-    <div id='parther' className='md:py-20 md:pb-40 py-10 bg-[#F4EEE4]'>
+    <div id='series' className='md:py-20 md:pb-40 py-10 bg-[#F4EEE4]'>
       <div className='container'>
         <div className='pt-10 lg:mr-20 lg:pt-0 w-full text-center md:text-left flex items-center flex-col mx-auto'>
           <p className='lg:text-xl text-base text-[#B3774C]'>Trà Chiều Thương Gia</p>

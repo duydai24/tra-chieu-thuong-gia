@@ -67,7 +67,7 @@ function ReasoHome() {
       <div className='container flex md:items-start items-center lg:flex-row flex-col'>
         <div className='lg:w-full w-full md:mr-10 mt-10'>
           <p className='lg:text-[30px] md:text-2xl text-xl font-bold uppercase text-[#187462] mb-1 text-center md:text-left'>10 lý do lựa chọn</p>
-          <p className='lg:text-[30px] md:text-2xl text-xl font-bold uppercase text-[#187462] md:mb-14 mb-5 text-center md:text-left'>Asia Business Insider</p>
+          <p className='lg:text-[30px] md:text-2xl text-xl font-bold uppercase text-[#187462] md:mb-14 mb-5 text-center md:text-left'>Trà Chiều Thương Gia</p>
           <div className='w-full pb-10 block md:hidden'>
             <Slider {...settings1} dotsClass='absolute -bottom-5 md:bottom-10 dots-banner' >
               {data?.map((item, index) =>

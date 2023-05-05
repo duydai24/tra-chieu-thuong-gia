@@ -6,15 +6,15 @@ import Slider from 'react-slick/lib/slider';
 const data = [
   {
     id: 1,
-    image: 'utilities1.jpg'
+    image: 'utilities1.gif'
   },
   {
     id: 2,
-    image: 'utilities2.jpg',
+    image: 'utilities2.gif',
   },
   {
     id: 3,
-    image: 'utilities3.jpg',
+    image: 'utilities3.gif',
   },
   {
     id: 4,
@@ -22,7 +22,7 @@ const data = [
   },
   {
     id: 5,
-    image: 'utilities5.jpg',
+    image: 'utilities5.gif',
   }
 ];
 

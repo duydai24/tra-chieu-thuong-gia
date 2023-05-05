@@ -11,6 +11,7 @@ function HeaderMoBile({player, className}) {
     {text: 'Diễn giả', id: '#speakers'},
     {text: 'Cộng đồng trà chiều', id: '#guest'},
     {text: 'Sự kiện', id: '#news'},
+    {text: 'Series', id: '#series'},
     {text: 'Đối tác', id: '#parther'},
     {text: 'Nhà tài trợ', id: '#donors'},
     {text: 'Liên hệ', id: '#contact'},

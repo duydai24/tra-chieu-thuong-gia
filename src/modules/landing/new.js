@@ -71,9 +71,13 @@ function New() {
             <div className='block' key={index}>
               <div className='flex items-center flex-col outline-none '>
                 <div className='relative overflow-hidden'>
-                  <img className='w-full h-[640px] relative hover:scale-125 transition-all duration-500' src={item.image} alt='' height={640} width={640} />
+                  <NavLink to={item.link} newtab>
+                    <img className='w-full h-[640px] relative hover:scale-125 transition-all duration-500' src={item.image} alt='' height={640} width={640} />
+                  </NavLink>
                 </div>
-                <p className='text-white text-xl text-center py-5 h-[100px] max-w-[80%] hover:text-[#FFC292]'>{item.label}</p>
+                <NavLink to={item.link} newtab>
+                  <p className='text-white mx-auto text-xl text-center py-5 h-[100px] max-w-[80%] hover:text-[#FFC292]'>{item.label}</p>
+                </NavLink>
                 <NavLink to={item.link} newtab>
                   <img className='mx-auto' src='./buttonNew.jpg' alt='buttonNew' />
                 </NavLink>
