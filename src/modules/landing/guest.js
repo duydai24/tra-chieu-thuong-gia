@@ -263,7 +263,7 @@ function Guest() {
                 <div className='flex items-center justify-between rounded-lg'>
                   <span className='h-1 md:w-[90%] w-0 bg-blue-gold rounded-full mr-5'></span>
                   <p className='text-blue-gold font-bold text-center md:text-2xl uppercase text-lg p-3 rounded-xl md:mx-auto mx-5 w-full hidden md:inline-block border-[1px] border-blue-gold '> {label} </p>
-                  <p className='bg-blue-gold text-[#004c3d] font-bold text-center text-base p-2 uppercase rounded-xl md:mx-auto w-full block md:hidden'>- {label} -</p>
+                  <p className='bg-blue-gold text-[#004c3d] font-bold text-center text-base p-2 uppercase rounded-xl md:mx-auto w-full block md:hidden'>{label}</p>
                   <span className='h-1 md:w-[90%] w-0 bg-blue-gold rounded-full ml-5'></span>
                 </div>
                 {

@@ -35,13 +35,13 @@ const data = [
   },
   {
     id: 4,
-    name: 'Miss.Lê Vân Anh',
+    name: 'Miss. Lê Vân Anh',
     image: 'leVanAnh.png',
     link: 'http://chuyengiadaotaovananh.com'
   },
   {
     id: 7,
-    name: 'CEO - LÊ HỒNG ÂN',
+    name: 'CEO. LÊ HỒNG ÂN',
     image: 'leHongAn.png',
     link: 'https://www.thoibaoasiabusiness.com/truyenthongbaochi'
   },
