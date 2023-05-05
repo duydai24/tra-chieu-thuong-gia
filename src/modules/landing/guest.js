@@ -19,13 +19,15 @@ const data = [
     lable: 'Cơ quan chủ quản truyền thông Trà Chiều Thương Gia',
     name: 'NHÀ BÁO. LƯƠNG NGỌC HÂN',
     image: 'anhTron12.png',
-    link: 'http://nguoisanhdieu.vn/'
+    link: 'http://nguoisanhdieu.vn/',
+    details: 'Nhà sáng lập & Bảo trợ truyền thông Trà Chiều Thương Gia'
   },
   {
     lable: 'Cơ quan chủ quản truyền thông Trà Chiều Thương Gia',
     name: 'Madam. lê thị mộng trinh',
     image: 'anhTron32.png',
-    link: 'http://globalwoman.vn/'
+    link: 'http://globalwoman.vn/',
+    details: 'Phó tổng biên tập tạp chí phụ nữ toàn cầu'
   },
   {
     lable: 'Truyền thông - báo chí',
@@ -274,6 +276,7 @@ function Guest() {
                           <div className='items-center flex justify-center flex-col hover:scale-110 transition-all group cursor-pointer' style={{flex: 1}}>
                             <img src={`/khachMoi/${item.image}`} alt={item.name} height={350} width={350} />
                             <p className='text-[#FFC292] group-hover:text-red-600 md:text-base text-sm font-bold mt-[-20px] uppercase'>{item.name}</p>
+                            <p className='text-[#FFC292] group-hover:text-red-600 md:text-base text-sm font-bold text-center mt-3 uppercase px-10'>{item?.details}</p>
                           </div>
                         </NavLink>
                       ))}
