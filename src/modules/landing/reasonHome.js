@@ -34,16 +34,16 @@ const settings1 = {
 };
 
 const dataText = [
-  {number: '1', content: 'Kinh nghiệm chuyên sâu về truyền thông và marketing.'},
-  {number: '2', content: 'Sự đổi mới và áp dụng xu hướng mới nhất.'},
-  {number: '3', content: 'Đa dạng dịch vụ và tận tâm với từng khách hàng.'},
-  {number: '4', content: 'Sáng tạo và cam kết đưa ra kết quả.'},
-  {number: '5', content: 'Giá cả cạnh tranh, hỗ trợ khách hàng chuyên nghiệp.'},
-  {number: '6', content: 'Đội ngũ tư vấn giàu kinh nghiệm, đào tạo chuyên sâu.'},
-  {number: '7', content: 'Luôn áp dụng xu hướng mới nhất trong lĩnh vực.'},
-  {number: '8', content: 'Cam kết mang lại kết quả cao nhất cho khách hàng.'},
-  {number: '9', content: 'Đảm bảo chất lượng dịch vụ tốt nhất cho khách hàng.'},
-  {number: '10', content: 'Hỗ trợ khách hàng nhanh chóng, chuyên nghiệp.'},
+  {number: '1', content: 'Gia tăng hiệu quả và triển vọng kinh doanh.'},
+  {number: '2', content: 'Nâng cao kiến thức và kỹ năng kinh doanh.'},
+  {number: '3', content: 'Tiếp cận với mạng lưới kinh doanh trong nước và quốc tế.'},
+  {number: '4', content: 'Đội ngũ lớn mạnh và bề dày > 10 năm kinh nghiệm.'},
+  {number: '5', content: 'Nguồn cơ hội kinh doanh mới liên tục.'},
+  {number: '6', content: 'Được huấn luyện và đào tạo liên tục.'},
+  {number: '7', content: 'Xây dựng mối quan hệ kinh doanh bền vững.'},
+  {number: '8', content: 'Luôn đổi mới và áp dụng xu hướng mới nhất.'},
+  {number: '9', content: 'Xây dựng nhân hiệu và thương hiệu doanh nghiệp'},
+  {number: '10', content: 'Được hỗ trợ về vốn và khởi nghiệp .'},
 ];
 
 const data = [
@@ -66,8 +66,8 @@ function ReasoHome() {
       <img src='./customBgRea.png' alt='' className='absolute -left-32 bottom-20 -rotate-12' width={390} height={250} />
       <div className='container flex md:items-start items-center lg:flex-row flex-col'>
         <div className='lg:w-full w-full md:mr-10 mt-10'>
-          <p className='lg:text-[30px] md:text-2xl text-xl font-bold uppercase text-[#187462] mb-1 text-center md:text-left'>10 lý do lựa chọn</p>
-          <p className='lg:text-[30px] md:text-2xl text-xl font-bold uppercase text-[#187462] md:mb-14 mb-5 text-center md:text-left'>Trà Chiều Thương Gia</p>
+          <p className='lg:text-[30px] md:text-2xl text-xl font-bold uppercase text-[#187462] mb-1 text-center md:text-left'>Tại sao nên tham gia</p>
+          <p className='lg:text-[30px] md:text-2xl text-xl font-bold uppercase text-[#187462] md:mb-14 mb-5 text-center md:text-left'>Trà Chiều Thương Gia?</p>
           <div className='w-full pb-10 block md:hidden'>
             <Slider {...settings1} dotsClass='absolute -bottom-5 md:bottom-10 dots-banner' >
               {data?.map((item, index) =>
