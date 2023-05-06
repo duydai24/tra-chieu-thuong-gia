@@ -273,7 +273,7 @@ function Guest() {
                     <div className='items-center flex-col justify-center md:flex-row' key={index} style={{display: 'flex'}}>
                       {group.map((item, i) => (
                         <NavLink key={i} to={item.link} newtab>
-                          <div className='items-center flex justify-center flex-col hover:scale-110 transition-all group cursor-pointer' style={{flex: 1}}>
+                          <div className='items-center flex justify-center flex-col md:hover:scale-110 transition-all group cursor-pointer' style={{flex: 1}}>
                             <img src={`/khachMoi/${item.image}`} alt={item.name} height={350} width={350} />
                             <p className='text-[#FFC292] group-hover:text-red-600 md:text-base text-sm font-bold mt-[-20px] uppercase'>{item.name}</p>
                             <p className='text-[#FFC292] group-hover:text-red-600 md:text-base text-sm font-bold text-center mt-3 uppercase px-10'>{item?.details}</p>

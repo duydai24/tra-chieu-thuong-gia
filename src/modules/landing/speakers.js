@@ -102,7 +102,7 @@ function Speakers() {
             <div className='items-center flex-col md:flex-row justify-center' key={index} style={{display: 'flex'}}>
               {group.map((item, i) => (
                 <NavLink key={i} to={item.link} newtab>
-                  <div className='items-center flex flex-col hover:scale-110 transition-all group cursor-pointer' style={{flex: 1}}>
+                  <div className='items-center flex flex-col md:hover:scale-110 transition-all group cursor-pointer' style={{flex: 1}}>
                     <img src={`diengia/${item.image}`} alt={item.name} height={350} width={350} />
                     <p className='text-[#004c3d] group-hover:text-red-600 font-bold mt-[-20px] uppercase'>{item.name}</p>
                   </div>
