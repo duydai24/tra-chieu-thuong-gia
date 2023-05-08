@@ -17,9 +17,9 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
 
-          <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/thumbnail.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/thumbnail.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="https://www.trachieuthuonggia.vn/favicon.ico" />
+          <link rel="icon" type="image/png" sizes="32x32" href="https://www.trachieuthuonggia.vn/thumbnail.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="https://www.trachieuthuonggia.vn/thumbnail.png" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <link href="/favicon.ico" rel="shortcut icon" />
 

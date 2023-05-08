@@ -1,1 +1,0 @@
-export const isBase64Image = str => str && str.length && (str + '').startsWith('data:image');
