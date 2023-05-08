@@ -27,6 +27,7 @@ export default function MyApp({Component, pageProps}) {
         title="TRÀ CHIỀU THƯƠNG GIA"
         meta={[
           {
+            image: 'https://www.trachieuthuonggia.vn/thumbnail.png',
             name: 'viewport',
             content: 'width=device-width, initial-scale=1',
           },
