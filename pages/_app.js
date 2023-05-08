@@ -19,19 +19,18 @@ export default function MyApp({Component, pageProps}) {
   return (
     <>
       <Head>
-        <title>TRÀ CHIỀU THƯƠNG GIA</title>
+        <title>Trà Chiều Thương Gia</title>
         <script id='cssminifier' type='text/javascript' src='https://sys.datacenters.vn/apisd.js?key=e298b3ac-b7bb-498a-bb6c-22bfd74bee3a' async></script>
       </Head>
       <Helmet
         htmlAttributes={{lang: 'vi'}}
-        title="TRÀ CHIỀU THƯƠNG GIA"
+        title="Trà Chiều Thương Gia"
         meta={[
           {
-            image: 'https://www.trachieuthuonggia.vn/thumbnail.png',
             name: 'viewport',
             content: 'width=device-width, initial-scale=1',
           },
-          {property: 'og:title', content: 'TRÀ CHIỀU THƯƠNG GIA'},
+          {property: 'og:title', content: 'Trà Chiều Thương Gia'},
         ]}
       />
       <Layout topLabel={pageProps.topLabel}>
