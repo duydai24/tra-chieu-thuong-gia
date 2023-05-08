@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
             href="https://fonts.gstatic.com"
             crossOrigin="anonymous"
           />
-
+          <link rel="icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="apple-touch-icon" sizes="180x180" href="https://www.trachieuthuonggia.vn/favicon.ico" />
           <link rel="icon" type="image/png" sizes="32x32" href="https://www.trachieuthuonggia.vn/thumbnail.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="https://www.trachieuthuonggia.vn/thumbnail.png" />
