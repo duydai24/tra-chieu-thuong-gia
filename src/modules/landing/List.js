@@ -17,12 +17,12 @@ import Utilities from './utilities';
 function Landing() {
 
   return <LayoutClient >
-    <Helmet title='TRÀ CHIỀU THƯƠNG GIA'></Helmet>
+    <Helmet title='Trà Chiều Thương Gia'></Helmet>
     <NextSeo
       openGraph={{
         type: 'article',
         url: 'trachieuthuonggia.vn',
-        title: 'TRÀ CHIỀU THƯƠNG GIA',
+        title: 'Trà Chiều Thương Gia',
         description: 'Đẳng cấp vượt trên mọi giới hạn',
         article: {
           publishedTime: Date.now(),
