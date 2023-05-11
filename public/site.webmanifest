@@ -1,7 +1,13 @@
 {
     "name": "Trà Chiều Thương Gia",
     "short_name": "",
-    "icons": "/favicon-32x32.png",
+    "icons": [
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        }
+    ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone"
