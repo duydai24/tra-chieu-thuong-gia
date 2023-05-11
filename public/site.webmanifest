@@ -1,7 +1,7 @@
 {
     "name": "Trà Chiều Thương Gia",
     "short_name": "",
-    "icons": [],
+    "icons": "/favicon-32x32.png",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone"
