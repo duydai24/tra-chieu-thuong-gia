@@ -12,7 +12,7 @@ const data = [
     {
         id: 1,
         image: './banner1.jpg',
-        content: 'Đẳng Cấp Vượt Trên Mọi Giới Hạn',
+        content: 'Dạo bước vườn địa đàng',
     },
     {
         id: 2,

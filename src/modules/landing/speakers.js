@@ -28,14 +28,14 @@ const data = [
     link: 'https://www.dongocbich.com/'
   },
   {
-    id: 4,
+    id: 5,
     name: 'CEO. EDITH GIRAUDO',
     image: 'EDITHGIRAUDO.png',
     link: 'https://blisssaigon.com/'
   },
   {
-    id: 4,
-    name: 'Miss. Lê Vân Anh',
+    id: 6,
+    name: 'MiSS. Lê Vân Anh',
     image: 'leVanAnh.png',
     link: 'http://chuyengiadaotaovananh.com'
   },
@@ -45,32 +45,55 @@ const data = [
     image: 'leHongAn.png',
     link: 'https://www.thoibaoasiabusiness.com/truyenthongbaochi'
   },
-
-  {
-    id: 6,
-    name: 'MR. LÊ HOÀNG MINH',
-    image: 'hoangMinh.png',
-    link: ''
-  },
-
   {
     id: 8,
+    name: 'NHÀ BÁO. LƯƠNG NGỌC HÂN',
+    image: 'luongNgocHan.png',
+    link: ''
+  },
+  {
+    id: 9,
+    name: 'MISS. NGUYỄN THỊ HỒNG VÂN',
+    image: 'nguyenThiHongVan.png',
+    link: ''
+  },
+  {
+    id: 10,
+    name: 'MC. HỒNG NHUNG',
+    image: 'hongNhung.png',
+    link: ''
+  },
+  {
+    id: 11,
+    name: 'MR. MÃ THANH DANH',
+    image: 'maThanhDanh.png',
+    link: ''
+  },
+  {
+    id: 12,
     name: 'MR. NGUYỄN MINH ANH',
     image: 'nguyenMinhAnh.png',
     link: ''
   },
   {
-    id: 9,
+    id: 13,
     name: 'MR. NAM ANH',
     image: 'namAnh.png',
     link: ''
   },
   {
-    id: 5,
+    id: 14,
+    name: 'MR. LÊ HOÀNG MINH',
+    image: 'hoangMinh.png',
+    link: ''
+  },
+  {
+    id: 15,
     name: 'MR. JIKEY',
     image: 'jikey.png',
     link: ''
   },
+
 ];
 
 function Speakers() {

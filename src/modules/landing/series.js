@@ -222,6 +222,104 @@ const data2 = [
     image: 'poster42.jpg'
   }
 ];
+const data3 = [
+  {
+    image: 'poster1.jpg'
+  },
+  {
+    image: 'poster2.jpg'
+  },
+  {
+    image: 'poster3.jpg'
+  },
+  {
+    image: 'poster4.jpg'
+  },
+  {
+    image: 'poster5.jpg'
+  },
+  {
+    image: 'poster6.jpg'
+  },
+  {
+    image: 'poster7.jpg'
+  },
+  {
+    image: 'poster8.jpg'
+  },
+  {
+    image: 'poster9.jpg'
+  },
+  {
+    image: 'poster10.jpg'
+  },
+  {
+    image: 'poster11.jpg'
+  },
+  {
+    image: 'poster12.jpg'
+  },
+  {
+    image: 'poster13.jpg'
+  },
+  {
+    image: 'poster14.jpg'
+  },
+  {
+    image: 'poster15.jpg'
+  },
+  {
+    image: 'poster16.jpg'
+  },
+  {
+    image: 'poster17.jpg'
+  },
+  {
+    image: 'poster18.jpg'
+  },
+  {
+    image: 'poster19.jpg'
+  },
+  {
+    image: 'poster20.jpg'
+  },
+  {
+    image: 'poster21.jpg'
+  },
+  {
+    image: 'poster22.jpg'
+  },
+  {
+    image: 'poster23.jpg'
+  },
+  {
+    image: 'poster24.jpg'
+  }
+  ,
+  {
+    image: 'poster25.jpg'
+  }
+  ,
+  {
+    image: 'poster26.jpg'
+  }
+  ,
+  {
+    image: 'poster27.jpg'
+  }
+  ,
+  {
+    image: 'poster28.jpg'
+  }
+  ,
+  {
+    image: 'poster29.jpg'
+  }
+  ,
+  {
+    image: 'poster30.jpg'
+  }
+];
 function Series() {
 
   const settings = {
@@ -286,6 +384,16 @@ function Series() {
             {data2?.map((item, index) =>
               <div key={index} >
                 <img alt={item.image} src={`/thiepmoi/lan2/${item.image}`} width={280} height={100} className='mx-auto w-[165px] md:w-[280px]' />
+              </div>
+            )}
+          </Slider>
+        </div>
+        <div className='md:mt-20 mt-10 px-5 md:px-0'>
+          <p className='text-[#00392D] font-medium text-xl md:text-3xl mb-5'>Trà chiều thương gia số thứ 3:</p>
+          <Slider {...settings}>
+            {data3?.map((item, index) =>
+              <div key={index} >
+                <img alt={item.image} src={`/thiepmoi/lan3/${item.image}`} width={280} height={100} className='mx-auto w-[165px] md:w-[280px]' />
               </div>
             )}
           </Slider>

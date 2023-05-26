@@ -48,6 +48,18 @@ const data = [
     link: 'http://nguoisanhdieu.vn/'
   },
   {
+    lable: 'Truyền thông - báo chí',
+    name: 'NSL. HÀ MY',
+    image: 'anhTron3-1.png',
+    link: 'http://nguoisanhdieu.vn/'
+  },
+  {
+    lable: 'Truyền thông - báo chí',
+    name: 'NHÀ BÁO. ĐÔ VĂN HIẾU',
+    image: 'anhTron3-6.png',
+    link: 'http://nguoisanhdieu.vn/'
+  },
+  {
     lable: 'Hoa hậu - Á hậu - Tổ chức hoa hậu',
     name: 'Á HẬU ĐIỆN ẢNH. ELDOS',
     image: 'anhTron5.png',
@@ -84,7 +96,24 @@ const data = [
     image: 'anhTron26.png',
     link: ''
   },
-
+  {
+    lable: 'Nghệ Sĩ - KOL - KOC',
+    name: 'DIỄN VIÊN. UYÊN THẢO',
+    image: 'anhTron3-8.png',
+    link: ''
+  },
+  {
+    lable: 'Nghệ Sĩ - KOL - KOC',
+    name: 'CA NHẠC SĨ. SỸ LUÂN',
+    image: 'anhTron3-5.png',
+    link: ''
+  },
+  {
+    lable: 'Nghệ Sĩ - KOL - KOC',
+    name: 'MC. HỒNG NHUNG',
+    image: 'anhTron3-11.png',
+    link: ''
+  },
   {
     lable: 'Hoa hậu - Á hậu - Tổ chức hoa hậu',
     name: 'HOA HẬU. NGUYỄN THỊ HỒNG VÂN',
@@ -118,13 +147,25 @@ const data = [
     name: 'CHỦ NHIỆM CLB MISS SAIGON. PHẠM NGUYỆT',
     image: 'anhTron19.png',
     link: ''
-  }, {
+  },
+  {
     lable: 'Hoa hậu - Á hậu - Tổ chức hoa hậu',
     name: 'CÔNG TY HOA HẬU. BẦU HÒA',
     image: 'anhTron16.png',
     link: ''
   },
-
+  {
+    lable: 'NHÀ THIẾT KẾ',
+    name: 'NTK. HỒNG LIÊN',
+    image: 'anhTron3-3.png',
+    link: ''
+  },
+  {
+    lable: 'NHÀ THIẾT KẾ',
+    name: 'NTK. ĐẶNG HỒNG THỦY',
+    image: 'anhTron3-17.png',
+    link: ''
+  },
   {
     lable: 'Quỹ đầu tư trong nước & Quốc tế',
     name: 'MR. XÂM ANH TÀI (Quỹ đầu tư Bông Sen Hoàng Gia)',
@@ -162,15 +203,32 @@ const data = [
   },
   {
     lable: 'Công nghệ',
+    name: 'TIẾN SĨ. PHẠM PHƯỚC HƯNG',
+    image: 'anhTron3-2.png',
+    link: ''
+  },
+  {
+    lable: 'Công nghệ',
     name: 'GĐ. NGUYỄN CÔNG TÂM',
     image: 'anhTron9.png',
     link: ''
   },
-
+  {
+    lable: 'Công nghệ',
+    name: 'CEO. NGUYỄN THIẾT',
+    image: 'anhTron3-4.png',
+    link: ''
+  },
   {
     lable: 'Chăm sóc sức khoẻ - Thực phẩm - Làm đẹp',
     name: 'MS. NGUYỄN THỊ NGỌC SOAN',
     image: 'anhTron6.png',
+    link: ''
+  },
+  {
+    lable: 'Chăm sóc sức khoẻ - Thực phẩm - Làm đẹp',
+    name: 'CEO. KHA LY',
+    image: 'anhTron3-12.png',
     link: ''
   },
   {
@@ -201,6 +259,18 @@ const data = [
     lable: 'Đào tạo',
     name: 'CEO. IRIS PHƯƠNG',
     image: 'anhTron27.png',
+    link: ''
+  },
+  {
+    lable: 'Đào tạo',
+    name: 'ĐẠO DIỄN - DIỄN VIÊN. HOÀNG THÔNG',
+    image: 'anhTron3-7.png',
+    link: ''
+  },
+  {
+    lable: 'Đào tạo',
+    name: 'DIỄN GIẢ. LÊ VĂN CƯƠNG',
+    image: 'anhTron3-10.png',
     link: ''
   }
 ];
