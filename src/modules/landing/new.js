@@ -117,14 +117,7 @@ function New() {
       image: 'logodaubao10.png',
       link: 'https://doisongvaphattrien.vn/asia-business-insider-cung-near-holding-voi-du-an-dot-pha-trong-thoi-dai-40-a44643.html',
       content: 'Tổng giám đốc Asia Business Insider Mr. Lê Hồng Ân là một trong những Chuyên gia đào tạo hàng đầu với bề dày kinh nghiệm trong lĩnh vực Marketing. Anh có thời gian sinh sống và làm việc ở các nước Đông Nam Á và là một trong những thành viên quản lý quỹ “Trọn vẹn ước mơ” của Canada, Marketing Manager của Công Ty Cổ phần Đầu Tư và Phát Triển Bất Động Sản Phượng Hoàng cùng với đó là những công ty về xu hướng công nghệ số đã biết đến tên tuổi của anh. '
-    },
-    //{
-    //  lable: '',
-    //  image: 'logodaubao1.png',
-    //  link: '',
-    //  content: ''
-    //},
-
+    }
   ];
   return (
     <div id='news' className='change-background py-10 lg:py-20'>

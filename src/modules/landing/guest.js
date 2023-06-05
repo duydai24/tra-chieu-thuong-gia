@@ -35,12 +35,12 @@ const data = [
     image: 'anhTron32.png',
     link: 'http://globalwoman.vn/'
   },
-  {
-    lable: 'Truyền thông - báo chí',
-    name: 'PGĐ. MR ĐAN',
-    image: 'anhTron10.png',
-    link: ''
-  },
+  //{
+  //  lable: 'Truyền thông - báo chí',
+  //  name: 'PGĐ. MR ĐAN',
+  //  image: 'anhTron10.png',
+  //  link: ''
+  //},
   {
     lable: 'Truyền thông - báo chí',
     name: 'NHÀ BÁO. LƯƠNG NGỌC HÂN',
