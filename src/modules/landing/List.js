@@ -13,6 +13,7 @@ import ReasonHome from './reasonHome';
 import Series from './series';
 import Speakers from './speakers';
 import Utilities from './utilities';
+import UtilitiesNew from './utilitiesNew';
 
 function Landing() {
 
@@ -35,7 +36,7 @@ function Landing() {
           url: 'https://www.trachieuthuonggia.vn/thumbnail.jpg',
           width: 660,
           height: 330,
-          alt: 'architecture , design, ...'
+          alt: 'architecture, design, ...'
         }],
       }}
     />
@@ -46,8 +47,9 @@ function Landing() {
         <Speakers />
       </div>
       <Guest />
-      <Utilities />
+      <UtilitiesNew />
       <Series />
+      <Utilities />
       <New />
       <ReasonHome />
       <Donors />
